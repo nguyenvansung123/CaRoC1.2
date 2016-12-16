@@ -1,0 +1,23 @@
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\bin\Debug\CaRoC.exe
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.frmCaro.resources
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.exe
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.pdb
+C:\Users\PC\Desktop\trí tuệ nhân tạo\CaRoC\CaRoC\obj\Debug\CaRoC.ThongTin.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.exe
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.pdb
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.frmCaro.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.ThongTin.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\bin\Debug\CaRoC.exe
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.Huongdan.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.Chienthang.resources
+C:\Users\Vang\New folder\Desktop\CaRoC\CaRoC\CaRoC\obj\Debug\CaRoC.Thatbbai.resources
