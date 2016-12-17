@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTin));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,12 +71,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(180, 114);
+            this.label4.Location = new System.Drawing.Point(176, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(307, 96);
+            this.label4.Size = new System.Drawing.Size(311, 168);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Nguyễn Tấn Lộc           1311060777\r\nNguyễn Công Sơn        1311061060\r\nLương Quố" +
-    "c Vang        1311061362\r\nHuỳnh thanh Nguyên   1311060880";
+            this.label4.Text = resources.GetString("label4.Text");
             // 
             // label5
             // 
@@ -83,7 +83,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(63, 76);
+            this.label5.Location = new System.Drawing.Point(59, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 24);
             this.label5.TabIndex = 4;
