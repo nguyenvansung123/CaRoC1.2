@@ -45,17 +45,17 @@ namespace CaRoC
             _SoCot = sc;
         }
 
-        public void VeBanCo(Graphics g)
-        {
-            for(int i=0; i<= SoCot;i++)
-            {
-                g.DrawLine(CaroChess.pen, i * OCo.ChieuRong, 0, i * OCo.ChieuRong, SoDong * OCo.ChieuCao);
-            }
-            for (int j = 0; j <= SoDong; j++)
-            {
-                g.DrawLine(CaroChess.pen, 0,j*OCo.ChieuCao, SoCot*OCo.ChieuRong, j*OCo.ChieuCao);
-            }
-        }
+        //public void VeBanCo(Graphics g)
+        //{
+        //    for(int i=0; i<= SoCot;i++)
+        //    {
+        //        g.DrawLine(CaroChess.pen, i * OCo.ChieuRong, 0, i * OCo.ChieuRong, SoDong * OCo.ChieuCao);
+        //    }
+        //    for (int j = 0; j <= SoDong; j++)
+        //    {
+        //        g.DrawLine(CaroChess.pen, 0,j*OCo.ChieuCao, SoCot*OCo.ChieuRong, j*OCo.ChieuCao);
+        //    }
+        //}
 
         public void VeQuanCo(Graphics g, Point point, Image sb)
         {
