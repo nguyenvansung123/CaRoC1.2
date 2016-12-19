@@ -9,6 +9,7 @@ namespace CaRoC
 {
     class BanCo
     {
+        //sung dep trai
         private int _SoDong;
         private int _SoCot;
         Image imageO = new Bitmap(Properties.Resources.o);
