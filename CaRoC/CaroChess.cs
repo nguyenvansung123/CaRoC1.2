@@ -143,6 +143,7 @@ namespace CaRoC
                 _ketthuc = KETTHUC.HoaCo;
                 return true;
             }
+            //hello
 
             foreach(OCo oco in DS_CacNuocDaDi)
             {
