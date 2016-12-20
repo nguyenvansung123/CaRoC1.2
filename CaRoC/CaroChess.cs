@@ -204,18 +204,18 @@ namespace CaRoC
         }
         private bool DuyetCheoNguoc(int currDong, int currCot, int currSoHuu)
         {
-        //    if (currDong <4 || currCot > _BanCo.SoCot - 5)
-        //        return false;
-        //    int dem;
-        //    for (dem = 1; dem < 5; dem++)
-        //    {
-        //        if (_MangOCo[currDong-dem, currCot + dem].SoHuu != currSoHuu)
-        //            return false;
-        //    }
-        //    if (currDong==4 || currDong==_BanCo.SoDong-1||currCot==0||currCot+dem==_BanCo.SoCot)
-        //        return true;
-        //    if (_MangOCo[currDong+1, currCot - 1].SoHuu == 0 || _MangOCo[currDong-dem, currCot + dem].SoHuu == 0)
-        //        return true;
+            if (currDong < 4 || currCot > _BanCo.SoCot - 5)
+                return false;
+            int dem;
+            for (dem = 1; dem < 5; dem++)
+            {
+                if (_MangOCo[currDong - dem, currCot + dem].SoHuu != currSoHuu)
+                    return false;
+            }
+            //    if (currDong==4 || currDong==_BanCo.SoDong-1||currCot==0||currCot+dem==_BanCo.SoCot)
+            //        return true;
+            //    if (_MangOCo[currDong+1, currCot - 1].SoHuu == 0 || _MangOCo[currDong-dem, currCot + dem].SoHuu == 0)
+            //        return true;
             return false;
         }
 
