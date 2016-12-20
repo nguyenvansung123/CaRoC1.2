@@ -27,3 +27,6 @@ C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
 C:\Users\N.T.D\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
+C:\Users\My-PC\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb

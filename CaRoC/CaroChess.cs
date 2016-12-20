@@ -222,6 +222,9 @@ namespace CaRoC
 
 
         //tri thong minh nhan tao
+        //đây là bản điểm sét bàn cờ tấn công phòng thủ
+        // các hàm mang tính quyết định khi đánh cờ
+        // điểm nào càng cao thì bàn cờ tự động đánh theo nước đó
 
 
         //private long[] MangDiemTanCong = new long[7] {0, 3, 24, 192, 1536, 12288, 98304 }; //đặt giá trị cho từng tầng của cây
