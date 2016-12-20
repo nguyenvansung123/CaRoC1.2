@@ -8,6 +8,9 @@ using System.Windows.Forms;
 
 namespace CaRoC
 {
+    /// <summary>
+    ///thu github
+    /// </summary>
     public enum KETTHUC
     {
         HoaCo,
