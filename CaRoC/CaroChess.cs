@@ -202,8 +202,8 @@ namespace CaRoC
                 return true;
             return false;
         }
-        //private bool DuyetCheoNguoc(int currDong, int currCot, int currSoHuu)
-        //{
+        private bool DuyetCheoNguoc(int currDong, int currCot, int currSoHuu)
+        {
         //    if (currDong <4 || currCot > _BanCo.SoCot - 5)
         //        return false;
         //    int dem;
@@ -216,8 +216,8 @@ namespace CaRoC
         //        return true;
         //    if (_MangOCo[currDong+1, currCot - 1].SoHuu == 0 || _MangOCo[currDong-dem, currCot + dem].SoHuu == 0)
         //        return true;
-        //    return false;
-        //}
+            return false;
+        }
 
 
         //tri thong minh nhan tao
