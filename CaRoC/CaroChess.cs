@@ -254,6 +254,7 @@ namespace CaRoC
                 {
                     if(_MangOCo[i,j].SoHuu==0)
                     {
+                        //khỏi tạo các biến
                         long DiemTanCong  = DiemTC_DuyetDoc(i,j) + DiemTC_DuyetNgang(i,j) + DiemTC_DuyetCheoNguoc(i,j) + DiemTC_DuyetCheoXuoi(i,j);
                         long DiemPhongNgu = DiemPN_DuyetDoc(i, j) + DiemPN_DuyetNgang(i, j) + DiemPN_DuyetCheoNguoc(i, j) + DiemPN_DuyetCheoXuoi(i, j);
                         long DiemTam = DiemTanCong > DiemPhongNgu ? DiemTanCong : DiemPhongNgu;
