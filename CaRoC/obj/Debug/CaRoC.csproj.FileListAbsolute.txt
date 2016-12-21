@@ -33,3 +33,6 @@ C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
 C:\Users\nhim\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
 C:\Users\nhim\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
 C:\Users\nhim\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
