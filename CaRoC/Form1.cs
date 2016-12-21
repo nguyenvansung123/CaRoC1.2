@@ -46,7 +46,7 @@ namespace CaRoC
 
         private void frmCaro_Load(object sender, EventArgs e)
         {
-            lblChuoiChu.Text = "Đây là sản phầm của đồ án \nmôn   trí    tuệ    nhân   tạo.\nĐồ án  được  thực  hiện với\nmục  đích  demo  ứng dụng\nthuật    toán     Minimax\nvà  thuật toán  Alpha-Beta\nvào  ứng  dụng  cờ   Caro";
+            lblChuoiChu.Text = "Đây là sản phầm của đồ án \nmôn công cụ và môi trường\nphát triển phần mềm.\nĐồ án  được  thực  hiện với\nmục đích demo tạo ra vùng\nlàm việc  nhóm trên github";
             lblChuoiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmThongTin.Enabled = true;
 
@@ -123,6 +123,11 @@ namespace CaRoC
         {
             grs.Clear(pnBanCo.BackColor);
             caroChess.BatDau(grs);
+        }
+
+        private void pnThongTin_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
