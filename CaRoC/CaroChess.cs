@@ -309,7 +309,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
 
@@ -348,7 +348,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -386,7 +386,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -424,7 +424,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
