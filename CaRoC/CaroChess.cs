@@ -15,6 +15,7 @@ namespace CaRoC
         NguoiChoi,
         MayAI
     }
+    //Them code duyet doc
     class CaroChess
     {
         public static Pen pen;
