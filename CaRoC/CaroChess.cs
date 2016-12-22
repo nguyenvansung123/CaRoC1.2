@@ -162,11 +162,7 @@ namespace CaRoC
             if (currDong > _BanCo.SoDong - 5)
                 return false;
             int dem;
-<<<<<<< HEAD
             for (dem = 1; dem < 5; dem++)
-=======
-            for(dem=1;dem<4;dem++)
->>>>>>> 7e418b4d47bc6e45f32d160075ed6f862aad570d
             {
                 if (_MangOCo[currDong + dem, currCot].SoHuu != currSoHuu)
                     return false;

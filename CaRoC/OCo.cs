@@ -9,11 +9,13 @@ namespace CaRoC
 {
     class OCo
     {
+        //gán giá trị số ô cho chiều rộng
         public const int ChieuRong = 25;
+        //gán giá trị số ô cho chiều cao
         public const int ChieuCao = 25;
-
+        //biến này dùng để gọi số dòng
         private int _Dong;
-
+        //hàm lấy giá trị và gán cho dòng
         public int Dong
         {
             get
@@ -28,7 +30,7 @@ namespace CaRoC
         }
 
         private int _Cot;
-
+        //hàm lấy giá trị và gán cho cột
         public int Cot
         {
             get
@@ -43,7 +45,7 @@ namespace CaRoC
         }
 
         private Point _ViTri;
-
+        // hàm gán giá trị và lấy cho vị trí
         public Point ViTri
         {
             get
@@ -58,6 +60,7 @@ namespace CaRoC
         }
 
         private int _SoHuu;
+        //gán giá trị và lấy cho sở hữu
         public int SoHuu
         {
             get
@@ -70,7 +73,7 @@ namespace CaRoC
                 _SoHuu = value;
             }
         }
-
+        // khởi tạo bàn cờ
         public OCo()
         {
 
