@@ -70,10 +70,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(176, 49);
+            this.label4.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label4.Location = new System.Drawing.Point(226, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(311, 168);
+            this.label4.Size = new System.Drawing.Size(316, 168);
             this.label4.TabIndex = 3;
             this.label4.Text = resources.GetString("label4.Text");
             // 

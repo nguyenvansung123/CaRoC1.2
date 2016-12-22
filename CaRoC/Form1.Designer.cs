@@ -72,6 +72,7 @@
             this.pnThongTin.Name = "pnThongTin";
             this.pnThongTin.Size = new System.Drawing.Size(219, 187);
             this.pnThongTin.TabIndex = 7;
+            this.pnThongTin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnThongTin_Paint);
             // 
             // lblChuoiChu
             // 
@@ -106,14 +107,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.newGameToolStripMenuItem.Text = "Thoát";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.cToolStripMenuItem.Text = "New Game";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
@@ -121,8 +122,8 @@
             // 
             this.tHÔNGTINToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.tHÔNGTINToolStripMenuItem.Name = "tHÔNGTINToolStripMenuItem";
-            this.tHÔNGTINToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.tHÔNGTINToolStripMenuItem.Text = "THÔNGTIN";
+            this.tHÔNGTINToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.tHÔNGTINToolStripMenuItem.Text = "THÔNG TIN";
             this.tHÔNGTINToolStripMenuItem.Click += new System.EventHandler(this.tHÔNGTINToolStripMenuItem_Click);
             // 
             // hƯỚNGDẪNToolStripMenuItem
