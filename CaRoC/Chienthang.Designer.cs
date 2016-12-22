@@ -40,9 +40,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(105, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 42);
+            this.label1.Size = new System.Drawing.Size(234, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "YOU WIN!";
+            this.label1.Text = "Chiến Thắng";
             // 
             // button1
             // 
