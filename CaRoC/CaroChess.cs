@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CaRoC
 {
- 
+
     public enum KETTHUC
     {
         HoaCo,
@@ -23,7 +23,7 @@ namespace CaRoC
         private List<OCo> DS_CacNuocDaDi;
         private int _LuotDi;
         private bool _SanSang;
-        
+
         private OCo[,] _MangOCo;
         private BanCo _BanCo;
         private KETTHUC _ketthuc;
@@ -55,25 +55,25 @@ namespace CaRoC
 
         public void KhoiTaoMangOCo()
         {
-            for(int i=0;i< _BanCo.SoDong;i++)
+            for (int i = 0; i < _BanCo.SoDong; i++)
             {
-                for(int j=0;j<_BanCo.SoCot;j++)
+                for (int j = 0; j < _BanCo.SoCot; j++)
                 {
-                    _MangOCo[i, j] = new OCo(i,j,new Point(j*OCo.ChieuRong,i*OCo.ChieuCao),0);
+                    _MangOCo[i, j] = new OCo(i, j, new Point(j * OCo.ChieuRong, i * OCo.ChieuCao), 0);
                 }
             }
         }
-        public bool DanhCo(int MouseX,int MouseY,Graphics g)
+        public bool DanhCo(int MouseX, int MouseY, Graphics g)
         {
-            if (MouseX % OCo.ChieuRong == 0|| MouseY % OCo.ChieuCao==0)
+            if (MouseX % OCo.ChieuRong == 0 || MouseY % OCo.ChieuCao == 0)
                 return false;
             int cot = MouseX / OCo.ChieuRong;
             int dong = MouseY / OCo.ChieuCao;
-            if(_MangOCo[dong,cot].SoHuu!=0)
+            if (_MangOCo[dong, cot].SoHuu != 0)
             {
                 return false;
             }
-            switch(_LuotDi)
+            switch (_LuotDi)
             {
                 case 1:
                     _MangOCo[dong, cot].SoHuu = 1;
@@ -90,14 +90,14 @@ namespace CaRoC
                     break;
             }
 
-           
-            
+
+
             DS_CacNuocDaDi.Add(_MangOCo[dong, cot]);
             return true;
         }
         public void VeLaiQuanCo(Graphics g)
         {
-            foreach(OCo oco in DS_CacNuocDaDi)
+            foreach (OCo oco in DS_CacNuocDaDi)
             {
                 if (oco.SoHuu == 1)
                     _BanCo.VeQuanCo(g, oco.ViTri, CoX);
@@ -112,7 +112,7 @@ namespace CaRoC
             _SanSang = true;
             DS_CacNuocDaDi = new List<OCo>();
             KhoiTaoMangOCo();
-            _LuotDi =1;
+            _LuotDi = 1;
             VeBanCo(g);
             KhoiDongComputer(g);
         }
@@ -139,16 +139,16 @@ namespace CaRoC
         }
         public bool KiemTraChienThang()
         {
-            if(DS_CacNuocDaDi.Count==_BanCo.SoCot*_BanCo.SoDong)
+            if (DS_CacNuocDaDi.Count == _BanCo.SoCot * _BanCo.SoDong)
             {
                 _ketthuc = KETTHUC.HoaCo;
                 return true;
             }
             //hello
 
-            foreach(OCo oco in DS_CacNuocDaDi)
+            foreach (OCo oco in DS_CacNuocDaDi)
             {
-                if(DuyetDoc(oco.Dong,oco.Cot,oco.SoHuu)||DuyetNgang(oco.Dong, oco.Cot, oco.SoHuu)||DuyetCheoXuoi(oco.Dong, oco.Cot, oco.SoHuu)||DuyetCheoNguoc(oco.Dong, oco.Cot, oco.SoHuu))
+                if (DuyetDoc(oco.Dong, oco.Cot, oco.SoHuu) || DuyetNgang(oco.Dong, oco.Cot, oco.SoHuu) || DuyetCheoXuoi(oco.Dong, oco.Cot, oco.SoHuu) || DuyetCheoNguoc(oco.Dong, oco.Cot, oco.SoHuu))
                 {
                     _ketthuc = oco.SoHuu == 1 ? KETTHUC.NguoiChoi : KETTHUC.MayAI;
                     return true;
@@ -156,19 +156,19 @@ namespace CaRoC
             }
             return false;
         }
-        private bool DuyetDoc(int currDong,int currCot, int currSoHuu)
+        private bool DuyetDoc(int currDong, int currCot, int currSoHuu)
         {
             if (currDong > _BanCo.SoDong - 5)
                 return false;
             int dem;
-            for(dem=1;dem<5;dem++)
+            for (dem = 1; dem < 5; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot].SoHuu != currSoHuu)
                     return false;
             }
-            if (currDong == 0|| currDong+dem==_BanCo.SoDong)
+            if (currDong == 0 || currDong + dem == _BanCo.SoDong)
                 return true;
-            if (_MangOCo[currDong - 1, currCot].SoHuu == 0||_MangOCo[currDong+dem,currCot].SoHuu==0)
+            if (_MangOCo[currDong - 1, currCot].SoHuu == 0 || _MangOCo[currDong + dem, currCot].SoHuu == 0)
                 return true;
             return false;
         }
@@ -179,7 +179,7 @@ namespace CaRoC
             int dem;
             for (dem = 1; dem < 5; dem++)
             {
-                if (_MangOCo[currDong , currCot + dem].SoHuu != currSoHuu)
+                if (_MangOCo[currDong, currCot + dem].SoHuu != currSoHuu)
                     return false;
             }
             if (currCot == 0 || currCot + dem == _BanCo.SoCot)
@@ -190,17 +190,17 @@ namespace CaRoC
         }
         private bool DuyetCheoXuoi(int currDong, int currCot, int currSoHuu)
         {
-            if (currDong > _BanCo.SoDong -5 || currCot > _BanCo.SoCot - 5)
+            if (currDong > _BanCo.SoDong - 5 || currCot > _BanCo.SoCot - 5)
                 return false;
             int dem;
             for (dem = 1; dem < 5; dem++)
             {
-                if (_MangOCo[currDong+dem, currCot + dem].SoHuu != currSoHuu)
+                if (_MangOCo[currDong + dem, currCot + dem].SoHuu != currSoHuu)
                     return false;
             }
-            if (currDong==0 || currDong+dem == _BanCo.SoDong || currCot == 0 || currCot + dem == _BanCo.SoCot)
+            if (currDong == 0 || currDong + dem == _BanCo.SoDong || currCot == 0 || currCot + dem == _BanCo.SoCot)
                 return true;
-            if (_MangOCo[currDong-1, currCot - 1].SoHuu == 0 || _MangOCo[currDong+dem, currCot + dem].SoHuu == 0)
+            if (_MangOCo[currDong - 1, currCot - 1].SoHuu == 0 || _MangOCo[currDong + dem, currCot + dem].SoHuu == 0)
                 return true;
             return false;
         }
@@ -230,43 +230,47 @@ namespace CaRoC
 
         //private long[] MangDiemTanCong = new long[7] {0, 3, 24, 192, 1536, 12288, 98304 }; //đặt giá trị cho từng tầng của cây
         //private long[] MangDiemPhongNgu = new long[7] {0, 1, 9, 81, 729, 6561, 59849 };
-        private long[] MangDiemTanCong = new long[7]  { 0, 9, 54, 162, 1458, 13112,118008 }; //đặt giá trị cho từng tầng của cây
+        private long[] MangDiemTanCong = new long[7] { 0, 9, 54, 162, 1458, 13112, 118008 }; //đặt giá trị cho từng tầng của cây
         private long[] MangDiemPhongNgu = new long[7] { 0, 3, 27, 99, 729, 6561, 59049 };
 
-        public void KhoiDongComputer(Graphics g)
+        public void KhoiDongComputer(Graphics graphics)
         {
-            
-                if (DS_CacNuocDaDi.Count == 0)
-                {
-                    DanhCo(_BanCo.SoCot / 2 * OCo.ChieuRong + 1, _BanCo.SoDong / 2 * OCo.ChieuCao + 1, g);
-                }
+            //hàm gọi computer chạy
+            if (DS_CacNuocDaDi.Count == 0)//kiểm tra các nước đi
+            {
+                //gọi hàm đánh cờ vô để khở tạo các nước đi
+                DanhCo(_BanCo.SoCot / 2 * OCo.ChieuRong + 1, _BanCo.SoDong / 2 * OCo.ChieuCao + 1, graphics);
+            }
 
-                else
-                {
-                    OCo oco = TimKiemNuocDi();
-                    DanhCo(oco.ViTri.X + 1, oco.ViTri.Y + 1, g);
-                }
-            
+            else
+            {
+                //nếu không phải đánh đầu tiên thì phải tìm kiếm nước đi hợp lý
+                OCo oco = TimKiemNuocDi();
+                //gọi hàm đánh cờ vô theo nước đi hợp lý nhất
+                DanhCo(oco.ViTri.X + 1, oco.ViTri.Y + 1, graphics);
+            }
+
         }
         private OCo TimKiemNuocDi()
         {
             OCo ocoResult = new OCo();
             long DiemMax = 0;
             //thuật toán vét cạn
-            for(int i=0;i<_BanCo.SoDong;i++)
+            //thuật toán này sét duyệt các phần tử
+            for (int i = 0; i < _BanCo.SoDong; i++)
             {
-                for(int j=0;j<_BanCo.SoCot;j++)
+                for (int j = 0; j < _BanCo.SoCot; j++)
                 {
-                    if(_MangOCo[i,j].SoHuu==0)
+                    if (_MangOCo[i, j].SoHuu == 0)
                     {
                         //khỏi tạo các biến
-                        long DiemTanCong  = DiemTC_DuyetDoc(i,j) + DiemTC_DuyetNgang(i,j) + DiemTC_DuyetCheoNguoc(i,j) + DiemTC_DuyetCheoXuoi(i,j);
+                        long DiemTanCong = DiemTC_DuyetDoc(i, j) + DiemTC_DuyetNgang(i, j) + DiemTC_DuyetCheoNguoc(i, j) + DiemTC_DuyetCheoXuoi(i, j);
                         long DiemPhongNgu = DiemPN_DuyetDoc(i, j) + DiemPN_DuyetNgang(i, j) + DiemPN_DuyetCheoNguoc(i, j) + DiemPN_DuyetCheoXuoi(i, j);
                         long DiemTam = DiemTanCong > DiemPhongNgu ? DiemTanCong : DiemPhongNgu;
-                        if(DiemMax < DiemTam)
+                        if (DiemMax < DiemTam)
                         {
                             DiemMax = DiemTam;
-                            ocoResult = new OCo(_MangOCo[i, j].Dong, _MangOCo[i, j].Cot, _MangOCo[i, j].ViTri, _MangOCo[i,j].SoHuu);
+                            ocoResult = new OCo(_MangOCo[i, j].Dong, _MangOCo[i, j].Cot, _MangOCo[i, j].ViTri, _MangOCo[i, j].SoHuu);
                         }
                     }
                 }
@@ -275,12 +279,12 @@ namespace CaRoC
         }
 
         //Tấn Công
-        private long DiemTC_DuyetDoc(int currDong,int currCot)
+        private long DiemTC_DuyetDoc(int currDong, int currCot)
         {
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currDong + dem < _BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot].SoHuu == 1)
                     SoQuanTa++;
@@ -293,7 +297,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currDong - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currDong - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot].SoHuu == 1)
                     SoQuanTa++;
@@ -309,7 +313,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
 
@@ -319,7 +323,7 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot; dem++)
             {
                 if (_MangOCo[currDong, currCot + dem].SoHuu == 1)
                     SoQuanTa++;
@@ -332,7 +336,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong, currCot - dem].SoHuu == 1)
                     SoQuanTa++;
@@ -348,7 +352,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -357,11 +361,11 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong-dem>=0; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong - dem >= 0; dem++)
             {
-                if (_MangOCo[currDong-dem, currCot + dem].SoHuu == 1)
+                if (_MangOCo[currDong - dem, currCot + dem].SoHuu == 1)
                     SoQuanTa++;
-                else if (_MangOCo[currDong-dem, currCot + dem].SoHuu == 2)
+                else if (_MangOCo[currDong - dem, currCot + dem].SoHuu == 2)
                 {
                     SoQuanDich++;
 
@@ -370,7 +374,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0 &&  currDong + dem <_BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0 && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot - dem].SoHuu == 1)
                     SoQuanTa++;
@@ -386,7 +390,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -395,7 +399,7 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong + dem < _BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot + dem].SoHuu == 1)
                     SoQuanTa++;
@@ -408,7 +412,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0 && currDong - dem  >= 0; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0 && currDong - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot - dem].SoHuu == 1)
                     SoQuanTa++;
@@ -424,7 +428,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich]*2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -432,11 +436,11 @@ namespace CaRoC
         // phòng ngự
         private long DiemPN_DuyetDoc(int currDong, int currCot)
         {
-            
+
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currDong + dem < _BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot].SoHuu == 1)
                 {
@@ -450,7 +454,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currDong - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currDong - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot].SoHuu == 1)
                 {
@@ -475,7 +479,7 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot; dem++)
             {
                 if (_MangOCo[currDong, currCot + dem].SoHuu == 1)
                 {
@@ -491,7 +495,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong, currCot - dem].SoHuu == 1)
                 {
@@ -509,7 +513,7 @@ namespace CaRoC
 
             if (SoQuanTa == 2)
                 return 0;
-            DiemTong += MangDiemPhongNgu[SoQuanDich ];
+            DiemTong += MangDiemPhongNgu[SoQuanDich];
             return DiemTong;
         }
         private long DiemPN_DuyetCheoNguoc(int currDong, int currCot)
@@ -517,7 +521,7 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot + dem].SoHuu == 1)
                 {
@@ -531,7 +535,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0 && currDong + dem < _BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0 && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot - dem].SoHuu == 1)
                 {
@@ -556,7 +560,7 @@ namespace CaRoC
             long DiemTong = 0;
             int SoQuanTa = 0;
             int SoQuanDich = 0;
-            for (int dem=1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong + dem < _BanCo.SoDong; dem++)
+            for (int dem = 1; dem < 6 && currCot + dem < _BanCo.SoCot && currDong + dem < _BanCo.SoDong; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot + dem].SoHuu == 1)
                 {
@@ -570,7 +574,7 @@ namespace CaRoC
                 else
                     break;
             }
-            for (int dem=1; dem < 6 && currCot - dem >= 0 && currDong - dem >= 0; dem++)
+            for (int dem = 1; dem < 6 && currCot - dem >= 0 && currDong - dem >= 0; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot - dem].SoHuu == 1)
                 {
@@ -587,7 +591,7 @@ namespace CaRoC
 
             if (SoQuanTa == 2)
                 return 0;
-           
+
             DiemTong += MangDiemPhongNgu[SoQuanDich];
             return DiemTong;
         }
