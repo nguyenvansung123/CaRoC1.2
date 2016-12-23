@@ -46,3 +46,13 @@ C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Thatbbai.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
+C:\Users\My-PC\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
+C:\Users\My-PC\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Chienthang.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmCaro.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Huongdan.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Thatbbai.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache

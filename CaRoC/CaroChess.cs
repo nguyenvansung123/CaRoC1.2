@@ -11,18 +11,28 @@ namespace CaRoC
 
     public enum KETTHUC
     {
+        //trạng thái hòa cờ
         HoaCo,
+        //trạng thái người chơi thắng
         NguoiChoi,
+        //trạng thái máy thằng 
         MayAI
     }
     //Them code duyet doc
+
     class CaroChess
     {
+        //gọi hàm vẻ ra
         public static Pen pen;
+        // gán hình cho ô cờ 0
         public static Image CoO;
+        //gán hình cho ô cờ X
         public static Image CoX;
+        //load list danh sách các nước đi
         private List<OCo> DS_CacNuocDaDi;
+        //hàm gán lượt đi cho
         private int _LuotDi;
+        //hàm sẵn sàng
         private bool _SanSang;
 
         private OCo[,] _MangOCo;
