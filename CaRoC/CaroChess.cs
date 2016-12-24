@@ -77,7 +77,9 @@ namespace CaRoC
         public bool DanhCo(int MouseX, int MouseY, Graphics g)
         {
             if (MouseX % OCo.ChieuRong == 0 || MouseY % OCo.ChieuCao == 0)
+            {
                 return false;
+            }
             int cot = MouseX / OCo.ChieuRong;
             int dong = MouseY / OCo.ChieuCao;
             if (_MangOCo[dong, cot].SoHuu != 0)
@@ -111,10 +113,16 @@ namespace CaRoC
             foreach (OCo oco in DS_CacNuocDaDi)
             {
                 if (oco.SoHuu == 1)
+                {
                     _BanCo.VeQuanCo(g, oco.ViTri, CoX);
+                }
                 else
+                {
                     if (oco.SoHuu == 2)
-                    _BanCo.VeQuanCo(g, oco.ViTri, CoO);
+                    {
+                        _BanCo.VeQuanCo(g, oco.ViTri, CoO);
+                    }
+                }
             }
         }
 
@@ -137,11 +145,13 @@ namespace CaRoC
                     break;
                 case KETTHUC.NguoiChoi:
                     // MessageBox.Show("Máy thắng rồi!");
+                    // hiện form người chơi thắng
                     Form tb = new Thatbbai();
                     tb.ShowDialog();
                     break;
                 case KETTHUC.MayAI:
                     //MessageBox.Show("Bạn đã thắng");
+                    //hiện form máy thắng
                     Form ct = new Chienthang();
                     ct.ShowDialog();
                     break;
@@ -170,7 +180,9 @@ namespace CaRoC
         private bool DuyetDoc(int currDong, int currCot, int currSoHuu)
         {
             if (currDong > _BanCo.SoDong - 5)
+            {
                 return false;
+            }
             int dem;
             for (dem = 1; dem < 5; dem++)
             {
@@ -178,57 +190,79 @@ namespace CaRoC
                     return false;
             }
             if (currDong == 0 || currDong + dem == _BanCo.SoDong)
+            {
                 return true;
+            }
             if (_MangOCo[currDong - 1, currCot].SoHuu == 0 || _MangOCo[currDong + dem, currCot].SoHuu == 0)
+            {
                 return true;
+            }
             return false;
         }
         private bool DuyetNgang(int currDong, int currCot, int currSoHuu)
         {
             if (currCot > _BanCo.SoCot - 5)
+            {
                 return false;
+            }
             int dem;
-            for (dem = 1; dem < 4; dem++)
+            for (dem = 1; dem < 5; dem++)
             {
                 if (_MangOCo[currDong, currCot + dem].SoHuu != currSoHuu)
                     return false;
             }
             if (currCot == 0 || currCot + dem == _BanCo.SoCot)
+            {
                 return true;
+            }
             if (_MangOCo[currDong, currCot - 1].SoHuu == 0 || _MangOCo[currDong, currCot + dem].SoHuu == 0)
+            {
                 return true;
+            }
             return false;
         }
         private bool DuyetCheoXuoi(int currDong, int currCot, int currSoHuu)
         {
             if (currDong > _BanCo.SoDong - 5 || currCot > _BanCo.SoCot - 5)
+            {
                 return false;
+            }
             int dem;
-            for (dem = 1; dem < 4; dem++)
+            for (dem = 1; dem < 5; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot + dem].SoHuu != currSoHuu)
                     return false;
             }
             if (currDong == 0 || currDong + dem == _BanCo.SoDong || currCot == 0 || currCot + dem == _BanCo.SoCot)
+            {
                 return true;
+            }
             if (_MangOCo[currDong - 1, currCot - 1].SoHuu == 0 || _MangOCo[currDong + dem, currCot + dem].SoHuu == 0)
+            {
                 return true;
+            }
             return false;
         }
         private bool DuyetCheoNguoc(int currDong, int currCot, int currSoHuu)
         {
-            if (currDong < _BanCo.SoDong - 4 || currCot > _BanCo.SoCot - 5)
+            if (currDong < 4 || currCot > _BanCo.SoCot - 5)
+            {
                 return false;
+            }
             int dem;
-            for (dem = 1; dem < 4; dem++)
+            for (dem = 1; dem < 5; dem++)
             {
                 if (_MangOCo[currDong - dem, currCot + dem].SoHuu != currSoHuu)
                     return false;
             }
             if (currDong == 4 || currDong == _BanCo.SoDong - 1 || currCot == 0 || currCot + dem == _BanCo.SoCot)
+            {
                 return true;
+            }
             if (_MangOCo[currDong + 1, currCot - 1].SoHuu == 0 || _MangOCo[currDong - dem, currCot + dem].SoHuu == 0)
+            {
                 return true;
+            }
             return false;
         }
 
@@ -274,7 +308,6 @@ namespace CaRoC
                 {
                     if (_MangOCo[i, j].SoHuu == 0)
                     {
-                        //khỏi tạo các biến
                         long DiemTanCong = DiemTC_DuyetDoc(i, j) + DiemTC_DuyetNgang(i, j) + DiemTC_DuyetCheoNguoc(i, j) + DiemTC_DuyetCheoXuoi(i, j);
                         long DiemPhongNgu = DiemPN_DuyetDoc(i, j) + DiemPN_DuyetNgang(i, j) + DiemPN_DuyetCheoNguoc(i, j) + DiemPN_DuyetCheoXuoi(i, j);
                         long DiemTam = DiemTanCong > DiemPhongNgu ? DiemTanCong : DiemPhongNgu;
@@ -324,7 +357,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1];
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
 
@@ -363,7 +396,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1];
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
@@ -401,7 +434,7 @@ namespace CaRoC
 
             if (SoQuanDich == 2)
                 return 0;
-            DiemTong -= MangDiemPhongNgu[SoQuanDich] * 2;
+            DiemTong -= MangDiemPhongNgu[SoQuanDich + 1];
             DiemTong += MangDiemTanCong[SoQuanTa];
             return DiemTong;
         }
