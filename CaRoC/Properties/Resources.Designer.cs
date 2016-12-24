@@ -103,6 +103,16 @@ namespace CaRoC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deep_Close {
+            get {
+                object obj = ResourceManager.GetObject("Deep_Close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frmthatbai {
             get {
                 object obj = ResourceManager.GetObject("frmthatbai", resourceCulture);
