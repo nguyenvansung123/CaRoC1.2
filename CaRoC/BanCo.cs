@@ -39,19 +39,21 @@ namespace CaRoC
             _SoDong = 0;
             _SoCot = 0;
         }
-
+        // khởi tạo số dòng số code của ban cờ
         public BanCo(int sd,int sc)
         {
             _SoDong = sd;
             _SoCot = sc;
         }
-
+        //hàm vẽ bàn cờ
         public void VeBanCo(Graphics g)
         {
+            // vẽ hàng ngang
             for (int i = 0; i <= SoCot; i++)
             {
                 g.DrawLine(CaroChess.pen, i * OCo.ChieuRong, 0, i * OCo.ChieuRong, SoDong * OCo.ChieuCao);
             }
+            // vẽ theo chiều cao
             for (int j = 0; j <= SoDong; j++)
             {
                 g.DrawLine(CaroChess.pen, 0, j * OCo.ChieuCao, SoCot * OCo.ChieuRong, j * OCo.ChieuCao);
