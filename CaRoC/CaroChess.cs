@@ -187,11 +187,11 @@ namespace CaRoC
             if (currDong > _BanCo.SoDong - 5)
             {
                 return false;
-<<<<<<< HEAD
+
             }
-=======
+
             //Biến đếm
->>>>>>> 21e4ac464127e2cdce320494a3d0fa67a946ed70
+
             int dem;
             //Vòng lặp For
             for (dem = 1; dem < 5; dem++)
