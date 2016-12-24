@@ -34,9 +34,11 @@ namespace CaRoC
         private int _LuotDi;
         //hàm sẵn sàng
         private bool _SanSang;
-
+        //Khai báo mảng ô cờ, mảng 2 chiều 
         private OCo[,] _MangOCo;
+        //Hàm bàn cờ
         private BanCo _BanCo;
+        //Hàm kết thúc
         private KETTHUC _ketthuc;
 
         public bool SanSang
@@ -63,9 +65,10 @@ namespace CaRoC
         {
             _BanCo.VeBanCo(g);
         }
-
+        //Khởi tạo mảng ô cờ
         public void KhoiTaoMangOCo()
         {
+            //Tạo vòng lặp chạy đối tượng 
             for (int i = 0; i < _BanCo.SoDong; i++)
             {
                 for (int j = 0; j < _BanCo.SoCot; j++)
@@ -177,13 +180,20 @@ namespace CaRoC
             }
             return false;
         }
+        //Duyệt dọc (dòng hiện tại, cột, và sở hữu)
         private bool DuyetDoc(int currDong, int currCot, int currSoHuu)
         {
+            //Nếu số dòng hiện tại > 15
             if (currDong > _BanCo.SoDong - 5)
             {
                 return false;
+<<<<<<< HEAD
             }
+=======
+            //Biến đếm
+>>>>>>> 21e4ac464127e2cdce320494a3d0fa67a946ed70
             int dem;
+            //Vòng lặp For
             for (dem = 1; dem < 5; dem++)
             {
                 if (_MangOCo[currDong + dem, currCot].SoHuu != currSoHuu)

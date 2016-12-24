@@ -17,9 +17,20 @@ namespace CaRoC
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
+            {
+                this.DialogResult = DialogResult.OK;
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult h = MessageBox.Show("Bạn thực sự muốn thoát", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            if (h == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
