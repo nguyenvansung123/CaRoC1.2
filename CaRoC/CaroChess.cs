@@ -77,6 +77,12 @@ namespace CaRoC
                 }
             }
         }
+
+
+
+        //hàm đánh cờ bị lỗi 
+        // đánh vài lượt thì người chơi từ quân O sang quân X
+        
         public bool DanhCo(int MouseX, int MouseY, Graphics g)
         {
             if (MouseX % OCo.ChieuRong == 0 || MouseY % OCo.ChieuCao == 0)
@@ -128,6 +134,9 @@ namespace CaRoC
                 }
             }
         }
+
+        //hàm xử lý bắt đầu cũng như tạo mới bàn cờ
+
 
         public void BatDau(Graphics g)
         {
