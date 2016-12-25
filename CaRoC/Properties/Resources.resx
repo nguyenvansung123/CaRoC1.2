@@ -130,6 +130,9 @@
   <data name="hinhwwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinhwwin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="frmthatbai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frmthatbai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hinhthongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinhthongtin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +160,7 @@
   <data name="tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="frmthatbai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frmthatbai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="frmchienthang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frmchienthang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
