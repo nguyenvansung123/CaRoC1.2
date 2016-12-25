@@ -69,6 +69,10 @@ namespace CaRoC
                 caroChess.KetThucTroChoi();
             }
             caroChess.KhoiDongComputer(grs);
+            if (caroChess.KiemTraChienThang())
+            {
+                caroChess.KetThucTroChoi();
+            }
 
         }
 

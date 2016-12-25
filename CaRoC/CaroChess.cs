@@ -163,6 +163,7 @@ namespace CaRoC
         }
         public bool KiemTraChienThang()
         {
+
             if (DS_CacNuocDaDi.Count == _BanCo.SoCot * _BanCo.SoDong)
             {
                 _ketthuc = KETTHUC.HoaCo;
@@ -180,13 +181,16 @@ namespace CaRoC
                 }
             }
             return false;
+
         }
         //Duyệt dọc (dòng hiện tại, cột, và sở hữu)
         private bool DuyetDoc(int currDong, int currCot, int currSoHuu)
         {
             //Nếu số dòng hiện tại > 15(kiểu chủ động)
             if (currDong > _BanCo.SoDong - 5)
+            {
                 return false;
+            }
             //Biến đếm
             int dem;
             //Vòng lặp For chạy 4 lần, cùng với quân cờ đang xét
@@ -194,19 +198,25 @@ namespace CaRoC
             {
                 //Nếu mảng ô cờ dòng hiện tại + biến đếm, cột không đổi, sở hữu khác hay bằng sở hữu
                 if (_MangOCo[currDong + dem, currCot].SoHuu != currSoHuu)
+                {
                     return false;
+                }
             }
             //Nếu dòng hiện tại = 0 hoặc dòng hiện tại + biến đếm = bàn cờ(dòng hiện tại)
             if (currDong == 0 || currDong + dem == _BanCo.SoDong)
+            {
                 return true;
+            }
             //Nếu mảng ô cờ dòng hiện tại trừ 1, cột không đổi, sở hữu == 0 , trống hoặc k có quân trắng chặn => Chiến thắng
             //hoặc mảng ô cở dòng hiện tại + đếm , cột không đổi, sở hữu == 0, k bị chặn độ trên độ dưới thì sẽ return true, ngược lại thì false 
             if (_MangOCo[currDong - 1, currCot].SoHuu == 0 || _MangOCo[currDong + dem, currCot].SoHuu == 0)
+            {
                 return true;
+            }
             return false;
-     
-    }
-    private bool DuyetNgang(int currDong, int currCot, int currSoHuu)
+
+        }
+        private bool DuyetNgang(int currDong, int currCot, int currSoHuu)
         {
             if (currCot > _BanCo.SoCot - 5)
             {
