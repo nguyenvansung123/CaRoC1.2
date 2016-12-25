@@ -138,7 +138,7 @@ namespace CaRoC
             VeBanCo(g);
             KhoiDongComputer(g);
         }
-
+        //hàm xử lý thằng thua và hòa
         public void KetThucTroChoi()
         {
             switch (_ketthuc)
@@ -161,6 +161,8 @@ namespace CaRoC
             }
             _SanSang = false;
         }
+
+        //hàm kiểm tra xem bên nào có 5 quân cờ đi được liên tục trước
         public bool KiemTraChienThang()
         {
 
