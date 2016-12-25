@@ -104,6 +104,7 @@ namespace CaRoC
 
         private void hƯỚNGDẪNToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //phím tắt qua form hướng dẫn 
             Form hd = new Huongdan();
             hd.ShowDialog();
         }

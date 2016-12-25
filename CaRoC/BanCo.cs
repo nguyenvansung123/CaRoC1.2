@@ -9,12 +9,18 @@ namespace CaRoC
 {
     class BanCo
     {
-        //chinh sua lai gia dien
+        //chinh sua lai giao dien
+        // đây là class vẻ bàn cờ.
+       // định nghĩa dòng
         private int _SoDong;
+        //định nghĩa cột
         private int _SoCot;
+        //hàm vẻ quân cờ O
         Image imageO = new Bitmap(Properties.Resources.o);
+        //hàm vẻ quân cờ X
         Image imageX = new Bitmap(Properties.Resources.x);
-        Color bgColor = Color.YellowGreen;
+        //Color bgColor = Color.YellowGreen;
+        private Color bgColor = Color.Chartreuse;
 
         public int SoDong
         {
@@ -49,11 +55,13 @@ namespace CaRoC
         public void VeBanCo(Graphics g)
         {
             // vẽ hàng ngang
+            //vẻ theo chiều rộng
             for (int i = 0; i <= SoCot; i++)
             {
                 g.DrawLine(CaroChess.pen, i * OCo.ChieuRong, 0, i * OCo.ChieuRong, SoDong * OCo.ChieuCao);
             }
             // vẽ theo chiều cao
+            // vẻ theo chiều dài
             for (int j = 0; j <= SoDong; j++)
             {
                 g.DrawLine(CaroChess.pen, 0, j * OCo.ChieuCao, SoCot * OCo.ChieuRong, j * OCo.ChieuCao);
@@ -62,6 +70,7 @@ namespace CaRoC
 
         public void VeQuanCo(Graphics g, Point point, Image sb)
         {
+           // vẻ quân cờ dựa trên các chỉ số
            
             g.DrawImage(sb, point.X, point.Y, OCo.ChieuRong, OCo.ChieuCao);
             
