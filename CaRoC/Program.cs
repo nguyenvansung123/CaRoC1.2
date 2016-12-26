@@ -20,6 +20,7 @@ namespace CaRoC
             //pen = new Pen(Color.Red);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LoadGame());
             Application.Run(new frmCaro());
         }
     }

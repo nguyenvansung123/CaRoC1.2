@@ -53,8 +53,9 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(449, 84);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Đây là game caro được tạo ra nhằm mục đích nghiên cứu về trí thông minh nhân tạo." +
-    " Game được làm trên phần mền Visual Studio với ngôn ngữ lập trình là C#.";
+            this.label3.Text = "Đây là game caro được tạo ra nhằm mục đích nghiên cứu về cách làm việc trên gibth" +
+    "ub\r\n. Game được làm trên phần mền Visual Studio với ngôn ngữ lập trình là C#.";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 

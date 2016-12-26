@@ -181,6 +181,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmCaro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CaRo_AI";
             this.Load += new System.EventHandler(this.frmCaro_Load);
             this.pnThongTin.ResumeLayout(false);
