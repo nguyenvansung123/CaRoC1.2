@@ -78,11 +78,16 @@ namespace CaRoC
         {
 
         }
+        //hàm vẻ ô cờ
         public OCo(int dong,int cot,Point vitri,int sohuu)
         {
+            //giá trị dòng
             _Dong = dong;
+            // gán giá trị cột
             _Cot = cot;
+            //xác định vị trí
             _ViTri = vitri;
+            //xác định sở hữu
             _SoHuu = sohuu;
         }
         
