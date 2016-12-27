@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,8 @@ namespace CaRoC
         public frmCaro()
         {
             InitializeComponent();
+            SoundPlayer Sound = new SoundPlayer("C://Users//My-PC//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
+            Sound.Play();
             caroChess = new CaroChess();
             grs = pnBanCo.CreateGraphics();
             caroChess.KhoiTaoMangOCo();

@@ -80,3 +80,4 @@ C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
 C:\Users\huy\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
 C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
 C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
+C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.LoadGame.resources
