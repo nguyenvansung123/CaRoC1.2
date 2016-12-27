@@ -9,18 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+
 namespace CaRoC
 {
     public partial class frmCaro : Form
     {
         private CaroChess caroChess;
         private Graphics grs;
+        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//My-PC//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
+        bool Nhacplay=true;
 
         public frmCaro()
         {
             InitializeComponent();
-            SoundPlayer Sound = new SoundPlayer("C://Users//My-PC//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
-            Sound.Play();
+
+            
             caroChess = new CaroChess();
             grs = pnBanCo.CreateGraphics();
             caroChess.KhoiTaoMangOCo();
@@ -52,8 +56,11 @@ namespace CaRoC
             lblChuoiChu.Text = "Đây là sản phầm của đồ án \nmôn công cụ và môi trường\nphát triển phần mềm.\nĐồ án  được  thực  hiện với\nmục đích demo tạo ra vùng\nlàm việc  nhóm trên github";
             lblChuoiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmThongTin.Enabled = true;
+            XuLyNhac();
+          
 
         }
+        
 
         private void pnBanCo_Paint(object sender, PaintEventArgs e)
         {
@@ -136,6 +143,32 @@ namespace CaRoC
         private void pnThongTin_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pcNhac_Click(object sender, EventArgs e)
+        {
+            if (Nhacplay==true)
+            {
+                Nhacplay = false;
+                XuLyNhac();
+            }
+            else
+            {
+                Nhacplay = true;
+                XuLyNhac();
+            }
+        }
+
+        public void XuLyNhac()
+        {
+            if (Nhacplay == true)
+            {
+                nhac.Play();
+            }
+            else
+            {
+                nhac.Stop();
+            }
         }
     }
 }
