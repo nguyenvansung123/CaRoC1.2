@@ -1,6 +1,6 @@
 ﻿namespace CaRoC
 {
-    partial class LoadGame
+    partial class frmLoadGame
     {
         /// <summary>
         /// Required designer variable.

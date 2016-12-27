@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CaRoC
 {
-    public partial class Chienthang : Form
+    public partial class frmChienThang_Vdesign : Form
     {
-        public Chienthang()
+        public frmChienThang_Vdesign()
         {
             InitializeComponent();
         }

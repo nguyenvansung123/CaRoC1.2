@@ -134,6 +134,24 @@ namespace CaRoC
                 }
             }
         }
+        // hàm test thử
+        //public void VeLaiQuanCo(Graphics g)
+        //{
+        //    foreach (OCo oco in DS_CacNuocDaDi)
+        //    {
+        //        if (oco.SoHuu == 1)
+        //        {
+        //            _BanCo.VeQuanCo(g, oco.ViTri, CoX);
+        //        }
+        //        else
+        //        {
+        //            if (oco.SoHuu == 2)
+        //            {
+        //                _BanCo.VeQuanCo(g, oco.ViTri, CoO);
+        //            }
+        //        }
+        //    }
+        //}
 
         //hàm xử lý bắt đầu cũng như tạo mới bàn cờ
 
@@ -158,13 +176,13 @@ namespace CaRoC
                 case KETTHUC.NguoiChoi:
                     // MessageBox.Show("Máy thắng rồi!");
                     // hiện form người chơi thắng
-                    Form tb = new Thatbbai();
+                    Form tb = new frmThatBai_Vdesign();
                     tb.ShowDialog();
                     break;
                 case KETTHUC.MayAI:
                     //MessageBox.Show("Bạn đã thắng");
                     //hiện form máy thắng
-                    Form ct = new Chienthang();
+                    Form ct = new frmChienThang_Vdesign();
                     ct.ShowDialog();
                     break;
             }
