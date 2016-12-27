@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CaRoC
 {
-    public partial class LoadGame : Form
+    public partial class frmLoadGame : Form
     {
-        public LoadGame()
+        public frmLoadGame()
         {
             InitializeComponent();
         }

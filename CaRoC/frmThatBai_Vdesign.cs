@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CaRoC
 {
-    public partial class Thatbbai : Form
+    public partial class frmThatBai_Vdesign : Form
     {
-        public Thatbbai()
+        public frmThatBai_Vdesign()
         {
             InitializeComponent();
         }

@@ -19,7 +19,7 @@ namespace CaRoC
         public frmCaro()
         {
             InitializeComponent();
-            SoundPlayer Sound = new SoundPlayer("C://Users//My-PC//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
+            SoundPlayer Sound = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
             Sound.Play();
             caroChess = new CaroChess();
             grs = pnBanCo.CreateGraphics();
@@ -120,11 +120,14 @@ namespace CaRoC
 
         private void pcthoat_Click(object sender, EventArgs e)
         {
-            DialogResult h = MessageBox.Show("Bạn thực sự muốn thoát", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            if (h == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            frmThongBao_Vdesign tb = new frmThongBao_Vdesign();
+            tb.Show();
+
+            //DialogResult h = MessageBox.Show("Bạn thực sự muốn thoát", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            //if (h == DialogResult.Yes)
+            //{
+            //    Application.Exit();
+            //}
         }
 
         private void cToolStripMenuItem_Click(object sender, EventArgs e)
