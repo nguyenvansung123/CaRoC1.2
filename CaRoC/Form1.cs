@@ -154,13 +154,13 @@ namespace CaRoC
         {
             pcNhac.Image = Properties.Resources.OnMusic;
             if (Nhacplay==true)
-            {
+            {//set hình button trạng thái nhạc mở
                 pcNhac.Image = Properties.Resources.OffMusic;
                 Nhacplay = false;
                 XuLyNhac();
             }
             else
-            {
+            {// set hình button trạng thái nhạc tắt
                 pcNhac.Image = Properties.Resources.OnMusic;
                 Nhacplay = true;
                 XuLyNhac();
