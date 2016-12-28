@@ -184,11 +184,11 @@
     <None Include="Resources\frmchienthang.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
     <None Include="Resources\a.PNG" />
-=======
+
     <None Include="Resources\banner-design-india.png" />
->>>>>>> 9d070d79708efe3bfd54429c15876b223bce8ba7
+
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
     <Content Include="Resources\nhac.wav" />

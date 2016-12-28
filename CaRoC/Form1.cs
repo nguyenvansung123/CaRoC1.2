@@ -23,13 +23,10 @@ namespace CaRoC
         public frmCaro()
         {
             InitializeComponent();
-<<<<<<< HEAD
 
-            
-=======
-            SoundPlayer Sound = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
-            Sound.Play();
->>>>>>> 9d070d79708efe3bfd54429c15876b223bce8ba7
+            //SoundPlayer Sound = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
+            //Sound.Play();
+
             caroChess = new CaroChess();
             grs = pnBanCo.CreateGraphics();
             caroChess.KhoiTaoMangOCo();
