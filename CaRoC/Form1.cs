@@ -17,7 +17,7 @@ namespace CaRoC
     {
         private CaroChess caroChess;
         private Graphics grs;
-        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//My-PC//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
+        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
         bool Nhacplay=true;
 
         public frmCaro()
@@ -152,13 +152,16 @@ namespace CaRoC
 
         private void pcNhac_Click(object sender, EventArgs e)
         {
+            pcNhac.Image = Properties.Resources.OnMusic;
             if (Nhacplay==true)
             {
+                pcNhac.Image = Properties.Resources.OffMusic;
                 Nhacplay = false;
                 XuLyNhac();
             }
             else
             {
+                pcNhac.Image = Properties.Resources.OnMusic;
                 Nhacplay = true;
                 XuLyNhac();
             }

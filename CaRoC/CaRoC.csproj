@@ -184,11 +184,12 @@
     <None Include="Resources\frmchienthang.png" />
   </ItemGroup>
   <ItemGroup>
-
+    <None Include="Resources\OffMusic.png" />
+    <None Include="Resources\OnMusic.png" />
     <None Include="Resources\a.PNG" />
-
     <None Include="Resources\banner-design-india.png" />
-
+    <None Include="Resources\btnOnMusic.png" />
+    <None Include="Resources\btnOffMusic.png" />
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
     <Content Include="Resources\nhac.wav" />

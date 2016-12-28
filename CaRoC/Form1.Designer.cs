@@ -56,7 +56,7 @@
             this.pnBanCo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnBanCo.Location = new System.Drawing.Point(262, 26);
             this.pnBanCo.Name = "pnBanCo";
-            this.pnBanCo.Size = new System.Drawing.Size(542, 556);
+            this.pnBanCo.Size = new System.Drawing.Size(520, 520);
             this.pnBanCo.TabIndex = 1;
             this.pnBanCo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBanCo_Paint);
             this.pnBanCo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnBanCo_MouseClick);
@@ -70,7 +70,7 @@
             // 
             this.pnThongTin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnThongTin.Controls.Add(this.lblChuoiChu);
-            this.pnThongTin.Location = new System.Drawing.Point(12, 398);
+            this.pnThongTin.Location = new System.Drawing.Point(12, 373);
             this.pnThongTin.Name = "pnThongTin";
             this.pnThongTin.Size = new System.Drawing.Size(219, 187);
             this.pnThongTin.TabIndex = 7;
@@ -93,7 +93,7 @@
             this.hƯỚNGDẪNToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(825, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(785, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,10 +137,12 @@
             // 
             // pcNhac
             // 
-            this.pcNhac.Image = global::CaRoC.Properties.Resources.a;
-            this.pcNhac.Location = new System.Drawing.Point(57, 285);
+            this.pcNhac.BackColor = System.Drawing.Color.Transparent;
+            this.pcNhac.BackgroundImage = global::CaRoC.Properties.Resources.btnOnMusic;
+            this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcNhac.Location = new System.Drawing.Point(178, 267);
             this.pcNhac.Name = "pcNhac";
-            this.pcNhac.Size = new System.Drawing.Size(131, 50);
+            this.pcNhac.Size = new System.Drawing.Size(74, 69);
             this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcNhac.TabIndex = 10;
             this.pcNhac.TabStop = false;
@@ -149,7 +151,7 @@
             // pcthoat
             // 
             this.pcthoat.Image = global::CaRoC.Properties.Resources.thoat1;
-            this.pcthoat.Location = new System.Drawing.Point(57, 342);
+            this.pcthoat.Location = new System.Drawing.Point(41, 315);
             this.pcthoat.Name = "pcthoat";
             this.pcthoat.Size = new System.Drawing.Size(131, 50);
             this.pcthoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +162,7 @@
             // ptchoigame
             // 
             this.ptchoigame.Image = global::CaRoC.Properties.Resources.choigame1;
-            this.ptchoigame.Location = new System.Drawing.Point(57, 229);
+            this.ptchoigame.Location = new System.Drawing.Point(41, 249);
             this.ptchoigame.Name = "ptchoigame";
             this.ptchoigame.Size = new System.Drawing.Size(131, 50);
             this.ptchoigame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(825, 594);
+            this.ClientSize = new System.Drawing.Size(785, 564);
             this.Controls.Add(this.pcNhac);
             this.Controls.Add(this.pcthoat);
             this.Controls.Add(this.ptchoigame);
