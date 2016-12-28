@@ -151,7 +151,7 @@ namespace CaRoC
         }
 
         private void pcNhac_Click(object sender, EventArgs e)
-        {
+        {   
             pcNhac.Image = Properties.Resources.OnMusic;
             if (Nhacplay==true)
             {//set hình button trạng thái nhạc mở
@@ -168,13 +168,13 @@ namespace CaRoC
         }
 
         public void XuLyNhac()
-        {
+        {   
             if (Nhacplay == true)
-            {
+            {   // nhạc ở trạng thái chạy play
                 nhac.Play();
             }
             else
-            {
+            {   // nhạc ở trạng thái dừng
                 nhac.Stop();
             }
         }
