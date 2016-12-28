@@ -29,7 +29,7 @@ namespace CaRoC
         }
 
         private void tmThongTin_Tick(object sender, EventArgs e)
-        {
+        {   //lấy tọa độ label chuỗi chữ
             lblChuoiChu.Location = new Point(lblChuoiChu.Location.X, lblChuoiChu.Location.Y - 1);
 
             if (lblChuoiChu.Location.Y + lblChuoiChu.Height < 0)
@@ -39,11 +39,12 @@ namespace CaRoC
         }
 
         private void frmCaro_Load(object sender, EventArgs e)
-        {
+        {   //set chuỗi cho label
             lblChuoiChu.Text = "Đây là sản phầm của đồ án \nmôn công cụ và môi trường\nphát triển phần mềm.\nĐồ án  được  thực  hiện với\nmục đích demo tạo ra vùng\nlàm việc  nhóm trên github";
+            //set font chữ label
             lblChuoiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tmThongTin.Enabled = true;
-            XuLyNhac();
+            tmThongTin.Enabled = true; // gọi timertick
+            XuLyNhac();// gọi hàm xử lý nhạc
         }
 
         public void XuLyNhac()
