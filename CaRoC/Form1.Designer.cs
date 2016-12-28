@@ -99,8 +99,8 @@
             // gAMEToolStripMenuItem
             // 
             this.gAMEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.cToolStripMenuItem});
+            this.cToolStripMenuItem,
+            this.newGameToolStripMenuItem});
             this.gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.gAMEToolStripMenuItem.Text = "GAME";
@@ -108,14 +108,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newGameToolStripMenuItem.Text = "Thoát";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cToolStripMenuItem.Text = "New Game";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
