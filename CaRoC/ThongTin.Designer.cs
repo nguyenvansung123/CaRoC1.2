@@ -103,6 +103,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "ThongTin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongTin";
             this.ResumeLayout(false);
             this.PerformLayout();

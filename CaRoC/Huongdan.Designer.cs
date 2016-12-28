@@ -67,6 +67,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "Huongdan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Huongdan";
             this.Load += new System.EventHandler(this.Huongdan_Load);
             this.ResumeLayout(false);

@@ -74,7 +74,6 @@
             this.pnThongTin.Name = "pnThongTin";
             this.pnThongTin.Size = new System.Drawing.Size(219, 187);
             this.pnThongTin.TabIndex = 7;
-            this.pnThongTin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnThongTin_Paint);
             // 
             // lblChuoiChu
             // 
