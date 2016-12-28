@@ -35,7 +35,10 @@
             this.lblChuoiChu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gAMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NguoiNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NguoiMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongtinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HuongdanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,9 +46,6 @@
             this.pcthoat = new System.Windows.Forms.PictureBox();
             this.ptchoigame = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.NguoiNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NguoiMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
@@ -102,12 +102,17 @@
             // gAMEToolStripMenuItem
             // 
             this.gAMEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator1,
             this.cToolStripMenuItem,
+            this.toolStripSeparator1,
             this.newGameToolStripMenuItem});
             this.gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.gAMEToolStripMenuItem.Text = "GAME";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // cToolStripMenuItem
             // 
@@ -118,6 +123,18 @@
             this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cToolStripMenuItem.Text = "New Game";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
+            // 
+            // NguoiNguoiToolStripMenuItem
+            // 
+            this.NguoiNguoiToolStripMenuItem.Name = "NguoiNguoiToolStripMenuItem";
+            this.NguoiNguoiToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.NguoiNguoiToolStripMenuItem.Text = "Người - Người";
+            // 
+            // NguoiMayToolStripMenuItem
+            // 
+            this.NguoiMayToolStripMenuItem.Name = "NguoiMayToolStripMenuItem";
+            this.NguoiMayToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.NguoiMayToolStripMenuItem.Text = "Người - Máy";
             // 
             // newGameToolStripMenuItem
             // 
@@ -185,23 +202,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // NguoiNguoiToolStripMenuItem
-            // 
-            this.NguoiNguoiToolStripMenuItem.Name = "NguoiNguoiToolStripMenuItem";
-            this.NguoiNguoiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.NguoiNguoiToolStripMenuItem.Text = "Người - Người";
-            // 
-            // NguoiMayToolStripMenuItem
-            // 
-            this.NguoiMayToolStripMenuItem.Name = "NguoiMayToolStripMenuItem";
-            this.NguoiMayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.NguoiMayToolStripMenuItem.Text = "Người - Máy";
             // 
             // frmCaro
             // 
