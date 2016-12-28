@@ -37,7 +37,7 @@
             this.gAMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tHÔNGTINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ThongtinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HuongdanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pcNhac = new System.Windows.Forms.PictureBox();
             this.pcthoat = new System.Windows.Forms.PictureBox();
@@ -89,7 +89,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gAMEToolStripMenuItem,
-            this.tHÔNGTINToolStripMenuItem,
+            this.ThongtinToolStripMenuItem,
             this.HuongdanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -120,20 +120,20 @@
             this.cToolStripMenuItem.Text = "New Game";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
-            // tHÔNGTINToolStripMenuItem
+            // ThongtinToolStripMenuItem
             // 
-            this.tHÔNGTINToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.tHÔNGTINToolStripMenuItem.Name = "tHÔNGTINToolStripMenuItem";
-            this.tHÔNGTINToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.tHÔNGTINToolStripMenuItem.Text = "THÔNG TIN";
-            this.tHÔNGTINToolStripMenuItem.Click += new System.EventHandler(this.tHÔNGTINToolStripMenuItem_Click);
+            this.ThongtinToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.ThongtinToolStripMenuItem.Name = "ThongtinToolStripMenuItem";
+            this.ThongtinToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.ThongtinToolStripMenuItem.Text = "THÔNG TIN";
+            this.ThongtinToolStripMenuItem.Click += new System.EventHandler(this.ThongtinToolStripMenuItem_Click);
             // 
             // HuongdanToolStripMenuItem
             // 
             this.HuongdanToolStripMenuItem.Name = "HuongdanToolStripMenuItem";
             this.HuongdanToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.HuongdanToolStripMenuItem.Text = "HƯỚNG DẪN";
-            this.HuongdanToolStripMenuItem.Click += new System.EventHandler(this.hƯỚNGDẪNToolStripMenuItem_Click);
+            this.HuongdanToolStripMenuItem.Click += new System.EventHandler(this.HuongdanToolStripMenuItem_Click);
             // 
             // pcNhac
             // 
@@ -221,7 +221,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gAMEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tHÔNGTINToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ThongtinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HuongdanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.PictureBox ptchoigame;

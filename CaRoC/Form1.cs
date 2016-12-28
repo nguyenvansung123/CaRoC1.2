@@ -101,7 +101,7 @@ namespace CaRoC
         //    a.Show();
         //}
 
-        private void tHÔNGTINToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ThongtinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ThongTin a = new ThongTin();
             a.Show();
@@ -114,7 +114,7 @@ namespace CaRoC
 
         }
 
-        private void hƯỚNGDẪNToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HuongdanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //phím tắt qua form hướng dẫn 
             Form hd = new Huongdan();
@@ -178,5 +178,7 @@ namespace CaRoC
                 nhac.Stop();
             }
         }
+
+       
     }
 }
