@@ -18,6 +18,8 @@ namespace CaRoC
         private CaroChess caroChess = new CaroChess();//Khai báo + Khởi tạo đối tượng bàn cờ caro
         private Graphics grs;//Khai báo đồ họa dùng để vẽ bàn cờ
         System.Media.SoundPlayer nhac = new SoundPlayer(Application.StartupPath + "\\Music\\nhacnen.WAV");//Khai báo âm thanh nhạc nền
+        System.Media.SoundPlayer nhacclick = new SoundPlayer(Application.StartupPath + "\\Music\\Sung2.WAV");
+        
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
 
         public frmCaro()
@@ -68,6 +70,7 @@ namespace CaRoC
 
         private void pnBanCo_MouseClick(object sender, MouseEventArgs e)
         {
+            nhacclick.Play();
             if (!caroChess.SanSang)
                 return;
             caroChess.DanhCo(e.X, e.Y, grs);
