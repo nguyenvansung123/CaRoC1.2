@@ -17,7 +17,7 @@ namespace CaRoC
     {
         private CaroChess caroChess;
         private Graphics grs;
-        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
+        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//nguyenvansung//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
         bool Nhacplay=true;
 
         public frmCaro()
