@@ -85,3 +85,6 @@ C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmChienThang_Vdesign.reso
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThongBao_Vdesign.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmLoadGame.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThatBai_Vdesign.resources
+C:\Users\Huu\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\Huu\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
+C:\Users\Huu\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb

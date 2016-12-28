@@ -15,38 +15,23 @@ namespace CaRoC
 {
     public partial class frmCaro : Form
     {
-        private CaroChess caroChess;
-        private Graphics grs;
-        System.Media.SoundPlayer nhac = new SoundPlayer("C://Users//nguyenvansung//CaRoC1.2//CaRoC//Resources//nhacnen.WAV");
-        bool Nhacplay=true;
+        private CaroChess caroChess = new CaroChess();//Khai báo + Khởi tạo đối tượng bàn cờ caro
+        private Graphics grs;//Khai báo đồ họa dùng để vẽ bàn cờ
+        System.Media.SoundPlayer nhac = new SoundPlayer(Application.StartupPath + "\\Music\\nhacnen.WAV");//Khai báo âm thanh nhạc nền
+        bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
 
         public frmCaro()
         {
             InitializeComponent();
 
-            //SoundPlayer Sound = new SoundPlayer("C://Users//LUONG YANG//CaRoC1.2//CaRoC//Resources//nhacnen.wav");
-            //Sound.Play();
-
-            caroChess = new CaroChess();
-            grs = pnBanCo.CreateGraphics();
-            caroChess.KhoiTaoMangOCo();
+            grs = pnBanCo.CreateGraphics();//Khởi tạo đối tượng bàn cờ
+            caroChess.KhoiTaoMangOCo();//Khởi tạo mảng ô cờ
         }
-
-       
-
-        //private void button4_Click(object sender, EventArgs e)
-        //{
-        //    DialogResult h = MessageBox.Show("Bạn thực sự muốn thoát", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-        //    if (h == DialogResult.Yes)
-        //    {
-        //        Application.Exit();
-        //    }
-
-        //}
 
         private void tmThongTin_Tick(object sender, EventArgs e)
         {
             lblChuoiChu.Location = new Point(lblChuoiChu.Location.X, lblChuoiChu.Location.Y - 1);
+
             if (lblChuoiChu.Location.Y + lblChuoiChu.Height < 0)
             {
                 lblChuoiChu.Location = new Point(lblChuoiChu.Location.X, pnThongTin.Height);
@@ -59,10 +44,20 @@ namespace CaRoC
             lblChuoiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmThongTin.Enabled = true;
             XuLyNhac();
-          
-
         }
-        
+
+        public void XuLyNhac()
+        {
+            if (Nhacplay == true)
+            {
+                nhac.PlayLooping();
+            }
+            else
+            {
+                nhac.Stop();
+            }
+        }
+
 
         private void pnBanCo_Paint(object sender, PaintEventArgs e)
         {
@@ -88,97 +83,57 @@ namespace CaRoC
 
         }
 
-        //private void btnBatDau_Click(object sender, EventArgs e)
-        //{
-        //    grs.Clear(pnBanCo.BackColor);
-        //    caroChess.BatDau(grs);
-
-        //}
-
-        //private void button3_Click(object sender, EventArgs e)
-        //{
-        //    ThongTin a = new ThongTin();
-        //    a.Show();
-        //}
-
         private void ThongtinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThongTin a = new ThongTin();
-            a.Show();
+            ThongTin a = new ThongTin();//Khai báo form Thongtin
+            a.Show();//Hiển thị form Thongtin
         }
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            Application.Exit();
-
+            Application.Exit();//Thoát ứng dụng
         }
 
         private void HuongdanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //phím tắt qua form hướng dẫn 
-            Form hd = new Huongdan();
-            hd.ShowDialog();
+            Form hd = new Huongdan();//Khai báo form Huongdan
+            hd.ShowDialog();//Hiển thị form Huongdan
         }
 
         private void ptchoigame_Click(object sender, EventArgs e)
         {
-            grs.Clear(pnBanCo.BackColor);
-            caroChess.BatDau(grs);
+            grs.Clear(pnBanCo.BackColor);//Xóa trống bàn cờ - trước khi bắt đầu chơi
+            caroChess.BatDau(grs);//Bắt đầu chơi
         }
 
         private void pcthoat_Click(object sender, EventArgs e)
         {
-            frmThongBao_Vdesign tb = new frmThongBao_Vdesign();
-            tb.Show();
-
-            //DialogResult h = MessageBox.Show("Bạn thực sự muốn thoát", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            //if (h == DialogResult.Yes)
-            //{
-            //    Application.Exit();
-            //}
+            frmThongBao_Vdesign tb = new frmThongBao_Vdesign();//Khái báo form Thongbao
+            tb.Show();//Hiển thị form Thongbao
         }
 
         private void cToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            grs.Clear(pnBanCo.BackColor);
-            caroChess.BatDau(grs);
-        }
-
-        private void pnThongTin_Paint(object sender, PaintEventArgs e)
-        {
-
+            grs.Clear(pnBanCo.BackColor);//Xóa trống bàn cờ - trước khi bắt đầu chơi
+            caroChess.BatDau(grs);//Bắt đầu chơi
         }
 
         private void pcNhac_Click(object sender, EventArgs e)
-        {   
-            pcNhac.Image = Properties.Resources.OnMusic;
-            if (Nhacplay==true)
-            {//set hình button trạng thái nhạc mở
-                pcNhac.Image = Properties.Resources.OffMusic;
-                Nhacplay = false;
-                XuLyNhac();
+        {
+            //pcNhac.Image = Properties.Resources.OnMusic;//Khởi
+
+            if (Nhacplay == true)//Kiểm tra trạng thái âm nhạc hiện tại
+            {
+                pcNhac.Image = Properties.Resources.OffMusic;//set hình button trạng thái nhạc tắt
+                Nhacplay = false;//set trạng thái nhạc tắt
+                XuLyNhac();//cập nhật trạng thái nhạc
             }
             else
-            {// set hình button trạng thái nhạc tắt
-                pcNhac.Image = Properties.Resources.OnMusic;
-                Nhacplay = true;
-                XuLyNhac();
+            {
+                pcNhac.Image = Properties.Resources.OnMusic;// set hình button trạng thái nhạc mở
+                Nhacplay = true;//set trạng thái nhạc tắt
+                XuLyNhac();//cập nhật trạng thái nhạc
             }
         }
-
-        public void XuLyNhac()
-        {   
-            if (Nhacplay == true)
-            {   // nhạc ở trạng thái chạy play
-                nhac.Play();
-            }
-            else
-            {   // nhạc ở trạng thái dừng
-                nhac.Stop();
-            }
-        }
-
-       
     }
 }
