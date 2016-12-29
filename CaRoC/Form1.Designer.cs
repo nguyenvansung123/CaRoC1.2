@@ -35,10 +35,10 @@
             this.lblChuoiChu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gAMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NguoiNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NguoiMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongtinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HuongdanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,12 +46,14 @@
             this.pcthoat = new System.Windows.Forms.PictureBox();
             this.ptchoigame = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcChoi = new System.Windows.Forms.PictureBox();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBanCo
@@ -73,7 +75,7 @@
             // 
             this.pnThongTin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnThongTin.Controls.Add(this.lblChuoiChu);
-            this.pnThongTin.Location = new System.Drawing.Point(12, 373);
+            this.pnThongTin.Location = new System.Drawing.Point(12, 438);
             this.pnThongTin.Name = "pnThongTin";
             this.pnThongTin.Size = new System.Drawing.Size(240, 173);
             this.pnThongTin.TabIndex = 7;
@@ -95,7 +97,7 @@
             this.HuongdanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(785, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(845, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,18 +111,13 @@
             this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.gAMEToolStripMenuItem.Text = "GAME";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NguoiNguoiToolStripMenuItem,
             this.NguoiMayToolStripMenuItem});
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.cToolStripMenuItem.Text = "New Game";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
@@ -136,10 +133,15 @@
             this.NguoiMayToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.NguoiMayToolStripMenuItem.Text = "Người - Máy";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(129, 6);
+            // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.newGameToolStripMenuItem.Text = "Thoát";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
@@ -174,7 +176,7 @@
             // pcthoat
             // 
             this.pcthoat.Image = global::CaRoC.Properties.Resources.thoat1;
-            this.pcthoat.Location = new System.Drawing.Point(41, 315);
+            this.pcthoat.Location = new System.Drawing.Point(41, 361);
             this.pcthoat.Name = "pcthoat";
             this.pcthoat.Size = new System.Drawing.Size(131, 50);
             this.pcthoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,13 +205,25 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // pcChoi
+            // 
+            this.pcChoi.Image = global::CaRoC.Properties.Resources.thoat1;
+            this.pcChoi.Location = new System.Drawing.Point(41, 305);
+            this.pcChoi.Name = "pcChoi";
+            this.pcChoi.Size = new System.Drawing.Size(131, 50);
+            this.pcChoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcChoi.TabIndex = 11;
+            this.pcChoi.TabStop = false;
+            this.pcChoi.Click += new System.EventHandler(this.pcChoi_Click);
+            // 
             // frmCaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(785, 549);
+            this.ClientSize = new System.Drawing.Size(845, 623);
+            this.Controls.Add(this.pcChoi);
             this.Controls.Add(this.pcNhac);
             this.Controls.Add(this.pcthoat);
             this.Controls.Add(this.ptchoigame);
@@ -231,6 +245,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,6 +269,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem NguoiNguoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NguoiMayToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pcChoi;
     }
 }
 

@@ -685,5 +685,13 @@ namespace CaRoC
             DiemTong += MangDiemPhongNgu[SoQuanDich];
             return DiemTong;
         }
+        //xây dựng hàm 2 người chơi
+        private void CaRo2Nguoi()
+        {
+            int co;
+            int SoQuanTa = 0;
+            int SoQuanDich = 0;
+
+        }
     }
 }

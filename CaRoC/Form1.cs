@@ -139,5 +139,10 @@ namespace CaRoC
                 XuLyNhac();//cập nhật trạng thái nhạc
             }
         }
+
+        private void pcChoi_Click(object sender, EventArgs e)
+        {
+            // form này sẽ hiện lên bàn cờ caro 2 người chơi
+        }
     }
 }
