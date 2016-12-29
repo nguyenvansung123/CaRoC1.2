@@ -73,16 +73,19 @@ namespace CaRoC
             nhacclick.Play();
             if (!caroChess.SanSang)
                 return;
-            caroChess.DanhCo(e.X, e.Y, grs);
-
-            if (caroChess.KiemTraChienThang())
+            if (caroChess.DanhCo(e.X, e.Y, grs))
             {
-                caroChess.KetThucTroChoi();
-            }
-            caroChess.KhoiDongComputer(grs);
-            if (caroChess.KiemTraChienThang())
-            {
-                caroChess.KetThucTroChoi();
+                if (caroChess.KiemTraChienThang())
+                    caroChess.KetThucTroChoi();
+                else
+                {
+                    if (caroChess.CheDoChoi == 1)
+                    {
+                        caroChess.KhoiDongComputer(grs);
+                        if (caroChess.KiemTraChienThang())
+                            caroChess.KetThucTroChoi();
+                    }
+                }
             }
 
         }
@@ -143,6 +146,8 @@ namespace CaRoC
         private void pcChoi_Click(object sender, EventArgs e)
         {
             // form này sẽ hiện lên bàn cờ caro 2 người chơi
+            grs.Clear(pnBanCo.BackColor);
+            caroChess.Nguoi_va_Nguoi(grs);
         }
     }
 }

@@ -207,7 +207,7 @@
             // 
             // pcChoi
             // 
-            this.pcChoi.Image = global::CaRoC.Properties.Resources.thoat1;
+            this.pcChoi.Image = global::CaRoC.Properties.Resources.btnN1vsN2;
             this.pcChoi.Location = new System.Drawing.Point(41, 305);
             this.pcChoi.Name = "pcChoi";
             this.pcChoi.Size = new System.Drawing.Size(131, 50);

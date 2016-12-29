@@ -100,3 +100,5 @@ C:\Users\Huu\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\Huu\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
 C:\Users\Huu\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
 C:\Users\Huu\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources

@@ -16,7 +16,9 @@ namespace CaRoC
         //trạng thái người chơi thắng
         NguoiChoi,
         //trạng thái máy thằng 
-        MayAI
+        MayAI,
+        NguoiChoi_1,
+        NguoiChoi_2,
     }
     //Them code duyet doc
 
@@ -40,6 +42,7 @@ namespace CaRoC
         private BanCo _BanCo;
         //Hàm kết thúc
         private KETTHUC _ketthuc;
+        private int _CheDoChoi;
 
         public bool SanSang
         {
@@ -48,6 +51,10 @@ namespace CaRoC
                 return _SanSang;
             }
 
+        }
+        public int CheDoChoi
+        {
+            get { return _CheDoChoi; }
         }
 
         public CaroChess()
@@ -162,6 +169,7 @@ namespace CaRoC
             DS_CacNuocDaDi = new List<OCo>();
             KhoiTaoMangOCo();
             _LuotDi = 1;
+            _CheDoChoi = 1;
             VeBanCo(g);
             KhoiDongComputer(g);
         }
@@ -185,6 +193,14 @@ namespace CaRoC
                     Form ct = new frmChienThang_Vdesign();
                     ct.ShowDialog();
                     break;
+                case KETTHUC.NguoiChoi_1:
+                    Form ct1 = new NguoiChoiChienThang1();
+                    ct1.ShowDialog();
+                    break;
+                case KETTHUC.NguoiChoi_2:
+                    Form ct2 = new NguoiChoiChienThang2();
+                    ct2.ShowDialog();
+                    break;
             }
             _SanSang = false;
         }
@@ -205,8 +221,16 @@ namespace CaRoC
                 if (DuyetDoc(oco.Dong, oco.Cot, oco.SoHuu) || DuyetNgang(oco.Dong, oco.Cot, oco.SoHuu) || DuyetCheoXuoi(oco.Dong, oco.Cot, oco.SoHuu) || DuyetCheoNguoc(oco.Dong, oco.Cot, oco.SoHuu))
                 {
                     //Kéo biến kết thúc, xét xem sở hữu là bao nhiêu, nếu đúng Người Chơi, nếu sai MayAI
-                    _ketthuc = oco.SoHuu == 1 ? KETTHUC.NguoiChoi : KETTHUC.MayAI;
-                    return true;
+                    if (CheDoChoi == 1)
+                    {
+                        _ketthuc = oco.SoHuu == 1 ? KETTHUC.NguoiChoi : KETTHUC.MayAI;
+                        return true;
+                    }
+                    else
+                    {
+                        _ketthuc = oco.SoHuu == 1 ? KETTHUC.NguoiChoi_1 : KETTHUC.NguoiChoi_2;
+                        return true;
+                    }
                 }
             }
             return false;
@@ -686,12 +710,14 @@ namespace CaRoC
             return DiemTong;
         }
         //xây dựng hàm 2 người chơi
-        private void CaRo2Nguoi()
+        public void Nguoi_va_Nguoi(Graphics g)
         {
-            int co;
-            int SoQuanTa = 0;
-            int SoQuanDich = 0;
-
+            _SanSang = true;
+            DS_CacNuocDaDi = new List<OCo>();
+            _LuotDi = 1;
+            _CheDoChoi = 2;
+            KhoiTaoMangOCo();
+            VeBanCo(g);
         }
     }
 }

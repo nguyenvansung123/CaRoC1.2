@@ -79,6 +79,18 @@
     <Compile Include="frmLoadGame.Designer.cs">
       <DependentUpon>frmLoadGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="NguoiChoiChienThang1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NguoiChoiChienThang1.Designer.cs">
+      <DependentUpon>NguoiChoiChienThang1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiChoiChienThang2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NguoiChoiChienThang2.Designer.cs">
+      <DependentUpon>NguoiChoiChienThang2.cs</DependentUpon>
+    </Compile>
     <Compile Include="OCo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoadGame.resx">
       <DependentUpon>frmLoadGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguoiChoiChienThang1.resx">
+      <DependentUpon>NguoiChoiChienThang1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguoiChoiChienThang2.resx">
+      <DependentUpon>NguoiChoiChienThang2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +208,7 @@
     <None Include="Resources\banner-design-india.png" />
     <None Include="Resources\btnOnMusic.png" />
     <None Include="Resources\btnOffMusic.png" />
+    <None Include="Resources\btnN1vsN2.png" />
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
     <Content Include="Resources\nhac.wav" />
