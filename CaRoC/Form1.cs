@@ -21,6 +21,8 @@ namespace CaRoC
         System.Media.SoundPlayer nhacclick = new SoundPlayer(Application.StartupPath + "\\Music\\Sung2.WAV");
         
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
+        private HinhGif gifImage = null;
+        private string filePath = @"C:\Users\My-PC\CaRoC1.2\CaRoC\Resources\banana.gif";
 
         public frmCaro()
         {
@@ -34,6 +36,9 @@ namespace CaRoC
             prcbCoolDown.Value = 0;
             tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
             tmCoolDown.Start();
+
+
+           
         }
 
         private void tmThongTin_Tick(object sender, EventArgs e)
@@ -159,6 +164,19 @@ namespace CaRoC
         private void tmCoolDown_Tick(object sender, EventArgs e)
         {
             prcbCoolDown.PerformStep();
+          
+
+
+        }
+
+        private void timerImages_Tick(object sender, EventArgs e)
+        {
+            imageGif.Image = gifImage.GetNextFrame();
+        }
+
+        private void prcbCoolDown_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

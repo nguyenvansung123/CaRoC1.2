@@ -50,6 +50,8 @@
             this.prcbCoolDown = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.tmCoolDown = new System.Windows.Forms.Timer(this.components);
+            this.timerImages = new System.Windows.Forms.Timer(this.components);
+            this.imageGif = new System.Windows.Forms.PictureBox();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
@@ -57,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBanCo
@@ -225,6 +228,7 @@
             this.prcbCoolDown.Name = "prcbCoolDown";
             this.prcbCoolDown.Size = new System.Drawing.Size(100, 23);
             this.prcbCoolDown.TabIndex = 12;
+            this.prcbCoolDown.Click += new System.EventHandler(this.prcbCoolDown_Click);
             // 
             // label1
             // 
@@ -240,6 +244,18 @@
             // 
             this.tmCoolDown.Tick += new System.EventHandler(this.tmCoolDown_Tick);
             // 
+            // timerImages
+            // 
+            this.timerImages.Tick += new System.EventHandler(this.timerImages_Tick);
+            // 
+            // imageGif
+            // 
+            this.imageGif.Location = new System.Drawing.Point(157, 308);
+            this.imageGif.Name = "imageGif";
+            this.imageGif.Size = new System.Drawing.Size(100, 50);
+            this.imageGif.TabIndex = 14;
+            this.imageGif.TabStop = false;
+            // 
             // frmCaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +263,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(845, 623);
+            this.Controls.Add(this.imageGif);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.prcbCoolDown);
             this.Controls.Add(this.pcChoi);
@@ -272,6 +289,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,6 +317,8 @@
         private System.Windows.Forms.ProgressBar prcbCoolDown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmCoolDown;
+        private System.Windows.Forms.Timer timerImages;
+        private System.Windows.Forms.PictureBox imageGif;
     }
 }
 
