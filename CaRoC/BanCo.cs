@@ -21,7 +21,10 @@ namespace CaRoC
         Image imageX = new Bitmap(Properties.Resources.x);
         //Color bgColor = Color.YellowGreen;
         private Color bgColor = Color.Chartreuse;
-
+        // Đếm thời gian người chơi
+        public static int COOL_DOWN_STEP = 100;
+        public static int COOL_DOWN_TIME = 10000;
+        public static int COOL_DOWN_INTERVAL = 100;
         public int SoDong
         {
             get

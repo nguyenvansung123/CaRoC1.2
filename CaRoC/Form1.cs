@@ -28,6 +28,12 @@ namespace CaRoC
 
             grs = pnBanCo.CreateGraphics();//Khởi tạo đối tượng bàn cờ
             caroChess.KhoiTaoMangOCo();//Khởi tạo mảng ô cờ
+            // Xử lý thời gian người chơi
+            prcbCoolDown.Step = BanCo.COOL_DOWN_STEP;
+            prcbCoolDown.Maximum = BanCo.COOL_DOWN_TIME;
+            prcbCoolDown.Value = 0;
+            tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
+            tmCoolDown.Start();
         }
 
         private void tmThongTin_Tick(object sender, EventArgs e)
@@ -148,6 +154,11 @@ namespace CaRoC
             // form này sẽ hiện lên bàn cờ caro 2 người chơi
             grs.Clear(pnBanCo.BackColor);
             caroChess.Nguoi_va_Nguoi(grs);
+        }
+
+        private void tmCoolDown_Tick(object sender, EventArgs e)
+        {
+            prcbCoolDown.PerformStep();
         }
     }
 }

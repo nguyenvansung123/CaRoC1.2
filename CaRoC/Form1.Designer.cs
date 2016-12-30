@@ -47,6 +47,9 @@
             this.ptchoigame = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pcChoi = new System.Windows.Forms.PictureBox();
+            this.prcbCoolDown = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tmCoolDown = new System.Windows.Forms.Timer(this.components);
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
@@ -165,7 +168,7 @@
             this.pcNhac.BackColor = System.Drawing.Color.Transparent;
             this.pcNhac.BackgroundImage = global::CaRoC.Properties.Resources.btnOnMusic;
             this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcNhac.Location = new System.Drawing.Point(178, 267);
+            this.pcNhac.Location = new System.Drawing.Point(178, 249);
             this.pcNhac.Name = "pcNhac";
             this.pcNhac.Size = new System.Drawing.Size(74, 69);
             this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +179,7 @@
             // pcthoat
             // 
             this.pcthoat.Image = global::CaRoC.Properties.Resources.thoat1;
-            this.pcthoat.Location = new System.Drawing.Point(41, 361);
+            this.pcthoat.Location = new System.Drawing.Point(10, 361);
             this.pcthoat.Name = "pcthoat";
             this.pcthoat.Size = new System.Drawing.Size(131, 50);
             this.pcthoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -187,7 +190,7 @@
             // ptchoigame
             // 
             this.ptchoigame.Image = global::CaRoC.Properties.Resources.choigame1;
-            this.ptchoigame.Location = new System.Drawing.Point(41, 249);
+            this.ptchoigame.Location = new System.Drawing.Point(12, 249);
             this.ptchoigame.Name = "ptchoigame";
             this.ptchoigame.Size = new System.Drawing.Size(131, 50);
             this.ptchoigame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,13 +211,34 @@
             // pcChoi
             // 
             this.pcChoi.Image = global::CaRoC.Properties.Resources.btnN1vsN2;
-            this.pcChoi.Location = new System.Drawing.Point(41, 305);
+            this.pcChoi.Location = new System.Drawing.Point(12, 305);
             this.pcChoi.Name = "pcChoi";
             this.pcChoi.Size = new System.Drawing.Size(131, 50);
             this.pcChoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcChoi.TabIndex = 11;
             this.pcChoi.TabStop = false;
             this.pcChoi.Click += new System.EventHandler(this.pcChoi_Click);
+            // 
+            // prcbCoolDown
+            // 
+            this.prcbCoolDown.Location = new System.Drawing.Point(152, 388);
+            this.prcbCoolDown.Name = "prcbCoolDown";
+            this.prcbCoolDown.Size = new System.Drawing.Size(100, 23);
+            this.prcbCoolDown.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(149, 361);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Thời gian còn lại";
+            // 
+            // tmCoolDown
+            // 
+            this.tmCoolDown.Tick += new System.EventHandler(this.tmCoolDown_Tick);
             // 
             // frmCaro
             // 
@@ -223,6 +247,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(845, 623);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.prcbCoolDown);
             this.Controls.Add(this.pcChoi);
             this.Controls.Add(this.pcNhac);
             this.Controls.Add(this.pcthoat);
@@ -270,6 +296,9 @@
         private System.Windows.Forms.ToolStripMenuItem NguoiNguoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NguoiMayToolStripMenuItem;
         private System.Windows.Forms.PictureBox pcChoi;
+        private System.Windows.Forms.ProgressBar prcbCoolDown;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer tmCoolDown;
     }
 }
 

@@ -102,3 +102,17 @@ C:\Users\Huu\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
 C:\Users\Huu\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
+C:\Users\huy\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
+C:\Users\huy\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmChienThang_Vdesign.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmCaro.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThongBao_Vdesign.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Huongdan.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmLoadGame.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThatBai_Vdesign.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
+C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
