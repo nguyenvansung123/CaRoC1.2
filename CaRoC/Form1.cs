@@ -36,9 +36,6 @@ namespace CaRoC
             prcbCoolDown.Value = 0;
             tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
             tmCoolDown.Start();
-
-
-           
         }
 
         private void tmThongTin_Tick(object sender, EventArgs e)
@@ -115,6 +112,7 @@ namespace CaRoC
 
         private void ptchoigame_Click(object sender, EventArgs e)
         {
+            label_HienThiTen.Text = "NGƯỜI VỚI MÁY";
             grs.Clear(pnBanCo.BackColor);//Xóa trống bàn cờ - trước khi bắt đầu chơi
             caroChess.BatDau(grs);//Bắt đầu chơi
         }
@@ -152,8 +150,9 @@ namespace CaRoC
         private void pcChoi_Click(object sender, EventArgs e)
         {
             // form này sẽ hiện lên bàn cờ caro 2 người chơi
+            label_HienThiTen.Text = "NGƯỜI VỚI NGƯỜI";
             grs.Clear(pnBanCo.BackColor);
-            caroChess.Nguoi_va_Nguoi(grs);
+            caroChess.Nguoi_va_Nguoi(grs);           
         }
 
         private void tmCoolDown_Tick(object sender, EventArgs e)
@@ -190,6 +189,42 @@ namespace CaRoC
             // form này sẽ hiện lên bàn cờ caro 2 người chơi
             grs.Clear(pnBanCo.BackColor);
             caroChess.Nguoi_va_Nguoi(grs);
+        }
+
+        private void NvsM_ReChuotRa(object sender, EventArgs e)// khi không đưa rê chuột vào button Người-Máy
+        {
+            ptchoigame.Image = Properties.Resources.btn_NvsM;//set ảnh button trạng thái k rê chuột ban đầu
+            ptchoigame.Size = new Size(160, 72);// set kích thước button trạng thái k rê chuột ban đầu
+        }
+
+        private void NvsM_ReChuotVao(object sender, MouseEventArgs e)//khi rê chuột vào button Người-Máy
+        {
+            ptchoigame.Image = Properties.Resources.btn_NvsM2;//set ảnh button N_M ở trạng thái rê chuột vào (ảnh khác) 
+            ptchoigame.Size = new Size(180, 80);//set kích thước button N_M ở trạng thái rê chuột vào (kích thước khác)
+        }
+
+        private void NvsN_ReChuotRa(object sender, EventArgs e)
+        {
+            pcChoi.Image = Properties.Resources.btn_NvsN;//set ảnh button trạng thái k rê chuột ban đầu
+            pcChoi.Size = new Size(160, 72);// set kích thước button trạng thái k rê chuột ban đầu
+        }
+
+        private void NvsN_ReChuotVao(object sender, MouseEventArgs e)
+        {
+            pcChoi.Image = Properties.Resources.btn_NvsN2;//set ảnh button N_M ở trạng thái rê chuột vào (ảnh khác) 
+            pcChoi.Size = new Size(180, 80);//set kích thước button N_M ở trạng thái rê chuột vào (kích thước khác)
+        }
+
+        private void ThoatGame_ReChuotRa(object sender, EventArgs e)
+        {
+            pcthoat.Image = Properties.Resources.btn_ThoatGame;//set ảnh button trạng thái k rê chuột ban đầu
+            pcthoat.Size = new Size(160, 72);// set kích thước button trạng thái k rê chuột ban đầu
+        }
+
+        private void ThoatGame_ReChuotVao(object sender, MouseEventArgs e)
+        {
+            pcthoat.Image = Properties.Resources.btn_ThoatGame2;//set ảnh button N_M ở trạng thái rê chuột vào (ảnh khác) 
+            pcthoat.Size = new Size(180, 80);//set kích thước button N_M ở trạng thái rê chuột vào (kích thước khác)v
         }
     }
 }

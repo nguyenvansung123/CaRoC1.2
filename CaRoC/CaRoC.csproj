@@ -211,6 +211,12 @@
     <None Include="Resources\btnOffMusic.png" />
     <None Include="Resources\btnN1vsN2.png" />
     <Content Include="Resources\banana.gif" />
+    <None Include="Resources\btn_NvsM.png" />
+    <None Include="Resources\btn_NvsN.png" />
+    <None Include="Resources\btn_ThoatGame.png" />
+    <None Include="Resources\btn_NvsN2.png" />
+    <None Include="Resources\btn_NvsM2.png" />
+    <None Include="Resources\btn_ThoatGame2.png" />
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
     <Content Include="Resources\nhac.wav" />

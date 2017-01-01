@@ -36,35 +36,36 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gAMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.NguoivsNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NguoivsMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThoatGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongtinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HuongdanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pcNhac = new System.Windows.Forms.PictureBox();
-            this.pcthoat = new System.Windows.Forms.PictureBox();
-            this.ptchoigame = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pcChoi = new System.Windows.Forms.PictureBox();
             this.prcbCoolDown = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.tmCoolDown = new System.Windows.Forms.Timer(this.components);
             this.timerImages = new System.Windows.Forms.Timer(this.components);
             this.imageGif = new System.Windows.Forms.PictureBox();
-            this.NguoivsNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NguoivsMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pcChoi = new System.Windows.Forms.PictureBox();
+            this.pcNhac = new System.Windows.Forms.PictureBox();
+            this.pcthoat = new System.Windows.Forms.PictureBox();
+            this.ptchoigame = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label_HienThiTen = new System.Windows.Forms.Label();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBanCo
             // 
             this.pnBanCo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pnBanCo.Location = new System.Drawing.Point(262, 26);
+            this.pnBanCo.Location = new System.Drawing.Point(277, 64);
             this.pnBanCo.Name = "pnBanCo";
             this.pnBanCo.Size = new System.Drawing.Size(520, 520);
             this.pnBanCo.TabIndex = 1;
@@ -121,7 +122,23 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(154, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(195, 6);
+            // 
+            // NguoivsNguoiToolStripMenuItem
+            // 
+            this.NguoivsNguoiToolStripMenuItem.Name = "NguoivsNguoiToolStripMenuItem";
+            this.NguoivsNguoiToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.NguoivsNguoiToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.NguoivsNguoiToolStripMenuItem.Text = "Người vs Người";
+            this.NguoivsNguoiToolStripMenuItem.Click += new System.EventHandler(this.NguoivsNguoiToolStripMenuItem_Click);
+            // 
+            // NguoivsMayToolStripMenuItem
+            // 
+            this.NguoivsMayToolStripMenuItem.Name = "NguoivsMayToolStripMenuItem";
+            this.NguoivsMayToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.NguoivsMayToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.NguoivsMayToolStripMenuItem.Text = "Người vs Máy";
+            this.NguoivsMayToolStripMenuItem.Click += new System.EventHandler(this.NguoivsMayToolStripMenuItem_Click);
             // 
             // ThoatGameToolStripMenuItem
             // 
@@ -148,75 +165,20 @@
             this.HuongdanToolStripMenuItem.Text = "HƯỚNG DẪN";
             this.HuongdanToolStripMenuItem.Click += new System.EventHandler(this.HuongdanToolStripMenuItem_Click);
             // 
-            // pcNhac
-            // 
-            this.pcNhac.BackColor = System.Drawing.Color.Transparent;
-            this.pcNhac.BackgroundImage = global::CaRoC.Properties.Resources.btnOnMusic;
-            this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcNhac.Location = new System.Drawing.Point(178, 233);
-            this.pcNhac.Name = "pcNhac";
-            this.pcNhac.Size = new System.Drawing.Size(74, 69);
-            this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcNhac.TabIndex = 10;
-            this.pcNhac.TabStop = false;
-            this.pcNhac.Click += new System.EventHandler(this.pcNhac_Click);
-            // 
-            // pcthoat
-            // 
-            this.pcthoat.Image = global::CaRoC.Properties.Resources.thoat1;
-            this.pcthoat.Location = new System.Drawing.Point(10, 361);
-            this.pcthoat.Name = "pcthoat";
-            this.pcthoat.Size = new System.Drawing.Size(131, 50);
-            this.pcthoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcthoat.TabIndex = 0;
-            this.pcthoat.TabStop = false;
-            this.pcthoat.Click += new System.EventHandler(this.pcthoat_Click);
-            // 
-            // ptchoigame
-            // 
-            this.ptchoigame.Image = global::CaRoC.Properties.Resources.choigame1;
-            this.ptchoigame.Location = new System.Drawing.Point(12, 249);
-            this.ptchoigame.Name = "ptchoigame";
-            this.ptchoigame.Size = new System.Drawing.Size(131, 50);
-            this.ptchoigame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptchoigame.TabIndex = 0;
-            this.ptchoigame.TabStop = false;
-            this.ptchoigame.Click += new System.EventHandler(this.ptchoigame_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CaRoC.Properties.Resources.Untitled_1;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 195);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pcChoi
-            // 
-            this.pcChoi.Image = global::CaRoC.Properties.Resources.btnN1vsN2;
-            this.pcChoi.Location = new System.Drawing.Point(12, 305);
-            this.pcChoi.Name = "pcChoi";
-            this.pcChoi.Size = new System.Drawing.Size(131, 50);
-            this.pcChoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcChoi.TabIndex = 11;
-            this.pcChoi.TabStop = false;
-            this.pcChoi.Click += new System.EventHandler(this.pcChoi_Click);
-            // 
             // prcbCoolDown
             // 
-            this.prcbCoolDown.Location = new System.Drawing.Point(152, 388);
+            this.prcbCoolDown.Location = new System.Drawing.Point(383, 9);
             this.prcbCoolDown.Name = "prcbCoolDown";
-            this.prcbCoolDown.Size = new System.Drawing.Size(100, 23);
+            this.prcbCoolDown.Size = new System.Drawing.Size(399, 11);
             this.prcbCoolDown.TabIndex = 12;
             this.prcbCoolDown.Click += new System.EventHandler(this.prcbCoolDown_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(149, 361);
+            this.label1.Location = new System.Drawing.Point(274, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 16);
             this.label1.TabIndex = 13;
@@ -232,27 +194,83 @@
             // 
             // imageGif
             // 
-            this.imageGif.Location = new System.Drawing.Point(157, 308);
+            this.imageGif.Location = new System.Drawing.Point(183, 243);
             this.imageGif.Name = "imageGif";
-            this.imageGif.Size = new System.Drawing.Size(100, 50);
+            this.imageGif.Size = new System.Drawing.Size(79, 50);
             this.imageGif.TabIndex = 14;
             this.imageGif.TabStop = false;
             // 
-            // NguoivsNguoiToolStripMenuItem
+            // pcChoi
             // 
-            this.NguoivsNguoiToolStripMenuItem.Name = "NguoivsNguoiToolStripMenuItem";
-            this.NguoivsNguoiToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.NguoivsNguoiToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.NguoivsNguoiToolStripMenuItem.Text = "Người vs Người";
-            this.NguoivsNguoiToolStripMenuItem.Click += new System.EventHandler(this.NguoivsNguoiToolStripMenuItem_Click);
+            this.pcChoi.Image = global::CaRoC.Properties.Resources.btn_NvsN;
+            this.pcChoi.Location = new System.Drawing.Point(1, 243);
+            this.pcChoi.Name = "pcChoi";
+            this.pcChoi.Size = new System.Drawing.Size(160, 72);
+            this.pcChoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcChoi.TabIndex = 11;
+            this.pcChoi.TabStop = false;
+            this.pcChoi.Click += new System.EventHandler(this.pcChoi_Click);
+            this.pcChoi.MouseLeave += new System.EventHandler(this.NvsN_ReChuotRa);
+            this.pcChoi.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NvsN_ReChuotVao);
             // 
-            // NguoivsMayToolStripMenuItem
+            // pcNhac
             // 
-            this.NguoivsMayToolStripMenuItem.Name = "NguoivsMayToolStripMenuItem";
-            this.NguoivsMayToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.NguoivsMayToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.NguoivsMayToolStripMenuItem.Text = "Người vs Máy";
-            this.NguoivsMayToolStripMenuItem.Click += new System.EventHandler(this.NguoivsMayToolStripMenuItem_Click);
+            this.pcNhac.BackColor = System.Drawing.Color.Transparent;
+            this.pcNhac.BackgroundImage = global::CaRoC.Properties.Resources.btnOnMusic;
+            this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcNhac.Location = new System.Drawing.Point(178, 165);
+            this.pcNhac.Name = "pcNhac";
+            this.pcNhac.Size = new System.Drawing.Size(74, 69);
+            this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcNhac.TabIndex = 10;
+            this.pcNhac.TabStop = false;
+            this.pcNhac.Click += new System.EventHandler(this.pcNhac_Click);
+            // 
+            // pcthoat
+            // 
+            this.pcthoat.Image = global::CaRoC.Properties.Resources.btn_ThoatGame;
+            this.pcthoat.Location = new System.Drawing.Point(1, 321);
+            this.pcthoat.Name = "pcthoat";
+            this.pcthoat.Size = new System.Drawing.Size(160, 72);
+            this.pcthoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcthoat.TabIndex = 0;
+            this.pcthoat.TabStop = false;
+            this.pcthoat.Click += new System.EventHandler(this.pcthoat_Click);
+            this.pcthoat.MouseLeave += new System.EventHandler(this.ThoatGame_ReChuotRa);
+            this.pcthoat.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ThoatGame_ReChuotVao);
+            // 
+            // ptchoigame
+            // 
+            this.ptchoigame.Image = global::CaRoC.Properties.Resources.btn_NvsM;
+            this.ptchoigame.Location = new System.Drawing.Point(1, 165);
+            this.ptchoigame.Name = "ptchoigame";
+            this.ptchoigame.Size = new System.Drawing.Size(160, 72);
+            this.ptchoigame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptchoigame.TabIndex = 0;
+            this.ptchoigame.TabStop = false;
+            this.ptchoigame.Click += new System.EventHandler(this.ptchoigame_Click);
+            this.ptchoigame.MouseLeave += new System.EventHandler(this.NvsM_ReChuotRa);
+            this.ptchoigame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NvsM_ReChuotVao);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CaRoC.Properties.Resources.Untitled_1;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(255, 133);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label_HienThiTen
+            // 
+            this.label_HienThiTen.AutoSize = true;
+            this.label_HienThiTen.Font = new System.Drawing.Font("Broadway", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_HienThiTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label_HienThiTen.Location = new System.Drawing.Point(426, 25);
+            this.label_HienThiTen.Name = "label_HienThiTen";
+            this.label_HienThiTen.Size = new System.Drawing.Size(0, 36);
+            this.label_HienThiTen.TabIndex = 15;
             // 
             // frmCaro
             // 
@@ -261,6 +279,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(845, 623);
+            this.Controls.Add(this.label_HienThiTen);
             this.Controls.Add(this.imageGif);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.prcbCoolDown);
@@ -282,12 +301,12 @@
             this.pnThongTin.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcChoi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageGif)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,6 +335,7 @@
         private System.Windows.Forms.PictureBox imageGif;
         private System.Windows.Forms.ToolStripMenuItem NguoivsNguoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem NguoivsMayToolStripMenuItem;
+        private System.Windows.Forms.Label label_HienThiTen;
     }
 }
 

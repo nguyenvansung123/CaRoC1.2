@@ -93,6 +93,66 @@ namespace CaRoC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_NvsM {
+            get {
+                object obj = ResourceManager.GetObject("btn_NvsM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_NvsM2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_NvsM2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_NvsN {
+            get {
+                object obj = ResourceManager.GetObject("btn_NvsN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_NvsN2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_NvsN2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_ThoatGame {
+            get {
+                object obj = ResourceManager.GetObject("btn_ThoatGame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_ThoatGame2 {
+            get {
+                object obj = ResourceManager.GetObject("btn_ThoatGame2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnN1vsN2 {
             get {
                 object obj = ResourceManager.GetObject("btnN1vsN2", resourceCulture);
