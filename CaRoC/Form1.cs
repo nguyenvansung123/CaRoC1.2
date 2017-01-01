@@ -22,7 +22,7 @@ namespace CaRoC
         
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
         private HinhGif gifImage = null;
-        private string filePath = @"C:\Users\LUONGYANG\CaRoC1.2\CaRoC\Resources\banana.gif";
+        private string filePath = @"C:\Users\My-PC\CaRoC1.2\CaRoC\Resources\banana.gif";
 
         public frmCaro()
         {
@@ -31,11 +31,27 @@ namespace CaRoC
             grs = pnBanCo.CreateGraphics();//Khởi tạo đối tượng bàn cờ
             caroChess.KhoiTaoMangOCo();//Khởi tạo mảng ô cờ
             // Xử lý thời gian người chơi
+            //prcbCoolDown.Step = BanCo.COOL_DOWN_STEP;
+            //prcbCoolDown.Maximum = BanCo.COOL_DOWN_TIME;
+            //prcbCoolDown.Value = 0;
+            //tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
+            //tmCoolDown.Start();
+
+         
+        }
+
+        public void ChayTimer()
+        {
+            // Xử lý thời gian người chơi
             prcbCoolDown.Step = BanCo.COOL_DOWN_STEP;
             prcbCoolDown.Maximum = BanCo.COOL_DOWN_TIME;
             prcbCoolDown.Value = 0;
             tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
             tmCoolDown.Start();
+        }
+        public  void KTThoiGian()
+        {
+            
         }
 
         private void tmThongTin_Tick(object sender, EventArgs e)
@@ -46,6 +62,7 @@ namespace CaRoC
             {
                 lblChuoiChu.Location = new Point(lblChuoiChu.Location.X, pnThongTin.Height);
             }
+
         }
 
         private void frmCaro_Load(object sender, EventArgs e)
@@ -55,6 +72,11 @@ namespace CaRoC
             lblChuoiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmThongTin.Enabled = true; // gọi timertick
             XuLyNhac();// gọi hàm xử lý nhạc
+
+            gifImage = new HinhGif(filePath);
+            gifImage.ReverseAtEnd = false;
+            timerImages.Enabled = true;
+
         }
 
         public void XuLyNhac()
@@ -79,6 +101,7 @@ namespace CaRoC
         private void pnBanCo_MouseClick(object sender, MouseEventArgs e)
         {
             nhacclick.Play();
+            ChayTimer();
             if (!caroChess.SanSang)
                 return;
             if (caroChess.DanhCo(e.X, e.Y, grs))
@@ -225,6 +248,11 @@ namespace CaRoC
         {
             pcthoat.Image = Properties.Resources.btn_ThoatGame2;//set ảnh button N_M ở trạng thái rê chuột vào (ảnh khác) 
             pcthoat.Size = new Size(180, 80);//set kích thước button N_M ở trạng thái rê chuột vào (kích thước khác)v
+        }
+
+        private void imageGif_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

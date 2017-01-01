@@ -190,6 +190,7 @@
             // 
             // timerImages
             // 
+            this.timerImages.Interval = 5;
             this.timerImages.Tick += new System.EventHandler(this.timerImages_Tick);
             // 
             // imageGif
@@ -199,6 +200,7 @@
             this.imageGif.Size = new System.Drawing.Size(79, 50);
             this.imageGif.TabIndex = 14;
             this.imageGif.TabStop = false;
+            this.imageGif.Click += new System.EventHandler(this.imageGif_Click);
             // 
             // pcChoi
             // 
