@@ -35,11 +35,8 @@
             this.lblChuoiChu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gAMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NguoiNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NguoiMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ThoatGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongtinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HuongdanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pcNhac = new System.Windows.Forms.PictureBox();
@@ -52,6 +49,8 @@
             this.tmCoolDown = new System.Windows.Forms.Timer(this.components);
             this.timerImages = new System.Windows.Forms.Timer(this.components);
             this.imageGif = new System.Windows.Forms.PictureBox();
+            this.NguoivsNguoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NguoivsMayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcNhac)).BeginInit();
@@ -110,51 +109,33 @@
             // gAMEToolStripMenuItem
             // 
             this.gAMEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cToolStripMenuItem,
             this.toolStripSeparator1,
-            this.newGameToolStripMenuItem});
+            this.NguoivsNguoiToolStripMenuItem,
+            this.NguoivsMayToolStripMenuItem,
+            this.ThoatGameToolStripMenuItem});
             this.gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
+            this.gAMEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.gAMEToolStripMenuItem.Text = "GAME";
-            // 
-            // cToolStripMenuItem
-            // 
-            this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NguoiNguoiToolStripMenuItem,
-            this.NguoiMayToolStripMenuItem});
-            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.cToolStripMenuItem.Text = "New Game";
-            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
-            // 
-            // NguoiNguoiToolStripMenuItem
-            // 
-            this.NguoiNguoiToolStripMenuItem.Name = "NguoiNguoiToolStripMenuItem";
-            this.NguoiNguoiToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.NguoiNguoiToolStripMenuItem.Text = "Người - Người";
-            // 
-            // NguoiMayToolStripMenuItem
-            // 
-            this.NguoiMayToolStripMenuItem.Name = "NguoiMayToolStripMenuItem";
-            this.NguoiMayToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
-            this.NguoiMayToolStripMenuItem.Text = "Người - Máy";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(129, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(154, 6);
             // 
-            // newGameToolStripMenuItem
+            // ThoatGameToolStripMenuItem
             // 
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.newGameToolStripMenuItem.Text = "Thoát";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            this.ThoatGameToolStripMenuItem.Name = "ThoatGameToolStripMenuItem";
+            this.ThoatGameToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
+            this.ThoatGameToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.ThoatGameToolStripMenuItem.Text = "Thoát";
+            this.ThoatGameToolStripMenuItem.Click += new System.EventHandler(this.ThoatGameToolStripMenuItem_Click_1);
             // 
             // ThongtinToolStripMenuItem
             // 
             this.ThongtinToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.ThongtinToolStripMenuItem.Name = "ThongtinToolStripMenuItem";
+            this.ThongtinToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
             this.ThongtinToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.ThongtinToolStripMenuItem.Text = "THÔNG TIN";
             this.ThongtinToolStripMenuItem.Click += new System.EventHandler(this.ThongtinToolStripMenuItem_Click);
@@ -162,6 +143,7 @@
             // HuongdanToolStripMenuItem
             // 
             this.HuongdanToolStripMenuItem.Name = "HuongdanToolStripMenuItem";
+            this.HuongdanToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.HuongdanToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.HuongdanToolStripMenuItem.Text = "HƯỚNG DẪN";
             this.HuongdanToolStripMenuItem.Click += new System.EventHandler(this.HuongdanToolStripMenuItem_Click);
@@ -171,7 +153,7 @@
             this.pcNhac.BackColor = System.Drawing.Color.Transparent;
             this.pcNhac.BackgroundImage = global::CaRoC.Properties.Resources.btnOnMusic;
             this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcNhac.Location = new System.Drawing.Point(178, 249);
+            this.pcNhac.Location = new System.Drawing.Point(178, 233);
             this.pcNhac.Name = "pcNhac";
             this.pcNhac.Size = new System.Drawing.Size(74, 69);
             this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,6 +238,22 @@
             this.imageGif.TabIndex = 14;
             this.imageGif.TabStop = false;
             // 
+            // NguoivsNguoiToolStripMenuItem
+            // 
+            this.NguoivsNguoiToolStripMenuItem.Name = "NguoivsNguoiToolStripMenuItem";
+            this.NguoivsNguoiToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.NguoivsNguoiToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.NguoivsNguoiToolStripMenuItem.Text = "Người vs Người";
+            this.NguoivsNguoiToolStripMenuItem.Click += new System.EventHandler(this.NguoivsNguoiToolStripMenuItem_Click);
+            // 
+            // NguoivsMayToolStripMenuItem
+            // 
+            this.NguoivsMayToolStripMenuItem.Name = "NguoivsMayToolStripMenuItem";
+            this.NguoivsMayToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.NguoivsMayToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.NguoivsMayToolStripMenuItem.Text = "Người vs Máy";
+            this.NguoivsMayToolStripMenuItem.Click += new System.EventHandler(this.NguoivsMayToolStripMenuItem_Click);
+            // 
             // frmCaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,20 +303,19 @@
         private System.Windows.Forms.ToolStripMenuItem gAMEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ThongtinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HuongdanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ThoatGameToolStripMenuItem;
         private System.Windows.Forms.PictureBox ptchoigame;
         private System.Windows.Forms.PictureBox pcthoat;
-        private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
         private System.Windows.Forms.PictureBox pcNhac;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem NguoiNguoiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem NguoiMayToolStripMenuItem;
         private System.Windows.Forms.PictureBox pcChoi;
         private System.Windows.Forms.ProgressBar prcbCoolDown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmCoolDown;
         private System.Windows.Forms.Timer timerImages;
         private System.Windows.Forms.PictureBox imageGif;
+        private System.Windows.Forms.ToolStripMenuItem NguoivsNguoiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NguoivsMayToolStripMenuItem;
     }
 }
 
