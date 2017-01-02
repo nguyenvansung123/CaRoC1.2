@@ -36,11 +36,9 @@ C:\Users\nhim\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
 C:\Users\N.T.D\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
 C:\Users\N.T.D\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
-C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Chienthang.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmCaro.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Huongdan.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
-C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Thatbbai.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
 C:\Users\My-PC\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
@@ -118,3 +116,9 @@ C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\huy\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
 C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
 C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmChienThang_Vdesign.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThongBao_Vdesign.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmLoadGame.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
+C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThatBai_Vdesign.resources
