@@ -8,7 +8,6 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.IO;
 
 namespace CaRoC
@@ -22,7 +21,7 @@ namespace CaRoC
         
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
         private HinhGif gifImage = null;
-        private string filePath = @"C:\Users\My-PC\CaRoC1.2\CaRoC\Resources\banana.gif";
+        private string filePath = @"C:\Users\huy\CaRoC1.2\CaRoC\Resources\banana.gif";
 
         public frmCaro()
         {
@@ -49,8 +48,11 @@ namespace CaRoC
             tmCoolDown.Interval = BanCo.COOL_DOWN_INTERVAL;
             tmCoolDown.Start();
         }
-        public  void KTThoiGian()
+
+        public void KTThoiGian()
         {
+
+         
             
         }
 
@@ -138,6 +140,7 @@ namespace CaRoC
             label_HienThiTen.Text = "NGƯỜI VỚI MÁY";
             grs.Clear(pnBanCo.BackColor);//Xóa trống bàn cờ - trước khi bắt đầu chơi
             caroChess.BatDau(grs);//Bắt đầu chơi
+            ChayTimer();
         }
 
         private void pcthoat_Click(object sender, EventArgs e)
@@ -179,11 +182,14 @@ namespace CaRoC
         }
 
         private void tmCoolDown_Tick(object sender, EventArgs e)
-        {
+        {                    
             prcbCoolDown.PerformStep();
-          
-
-
+            if(prcbCoolDown.Value >= prcbCoolDown.Maximum)
+            {
+                prcbCoolDown.Value = 0;
+                tmCoolDown.Stop();
+                MessageBox.Show("Kết thúc game");
+             }                    
         }
 
         private void timerImages_Tick(object sender, EventArgs e)

@@ -31,18 +31,18 @@ namespace CaRoC
         //gán hình cho ô cờ X
         public static Image CoX;
         //load list danh sách các nước đi
-        private List<OCo> DS_CacNuocDaDi;
+        public List<OCo> DS_CacNuocDaDi;
         //hàm gán lượt đi cho
-        private int _LuotDi;
+        public int _LuotDi;
         //hàm sẵn sàng
-        private bool _SanSang;
+        public bool _SanSang;
         //Khai báo mảng ô cờ, mảng 2 chiều 
-        private OCo[,] _MangOCo;
+        public OCo[,] _MangOCo;
         //Hàm bàn cờ
-        private BanCo _BanCo;
+        public BanCo _BanCo;
         //Hàm kết thúc
-        private KETTHUC _ketthuc;
-        private int _CheDoChoi;
+        public KETTHUC _ketthuc;
+        public int _CheDoChoi;
 
         public bool SanSang
         {
