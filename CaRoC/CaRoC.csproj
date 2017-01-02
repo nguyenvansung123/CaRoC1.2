@@ -61,6 +61,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKetThuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKetThuc.Designer.cs">
+      <DependentUpon>frmKetThuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThongBao_Vdesign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKetThuc.resx">
+      <DependentUpon>frmKetThuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongBao_Vdesign.resx">
       <DependentUpon>frmThongBao_Vdesign.cs</DependentUpon>
@@ -219,6 +228,7 @@
     <None Include="Resources\btn_ThoatGame2.png" />
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
+    <None Include="Resources\frm_KetThuc.png" />
     <Content Include="Resources\nhac.wav" />
     <Content Include="Resources\nhacnen.WAV" />
   </ItemGroup>

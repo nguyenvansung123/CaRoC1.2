@@ -21,7 +21,7 @@ namespace CaRoC
         
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
         private HinhGif gifImage = null;
-        private string filePath = @"C:\Users\huy\CaRoC1.2\CaRoC\Resources\banana.gif";
+        private string filePath = @"C:\Users\LUONGYANG\CaRoC1.2\CaRoC\Resources\banana.gif";
 
         public frmCaro()
         {
@@ -189,6 +189,8 @@ namespace CaRoC
                 prcbCoolDown.Value = 0;
                 tmCoolDown.Stop();
                 MessageBox.Show("Kết thúc game");
+                Form ktgame = new frmKetThuc();
+                ktgame.ShowDialog();
              }                    
         }
 
