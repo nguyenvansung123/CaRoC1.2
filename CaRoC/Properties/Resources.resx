@@ -121,6 +121,9 @@
   <data name="frmchienthang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\frmchienthang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_ThoatGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_ThoatGame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="OnMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OnMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,6 +145,12 @@
   <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled-1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lSi50cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lSi50cl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f_ngang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f_ngang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_NvsN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_NvsN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,11 +166,14 @@
   <data name="a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="frmthatbai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frmthatbai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="frm_KetThuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frm_KetThuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thoat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thoat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f_doc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f_doc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnN1vsN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnN1vsN2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,17 +181,11 @@
   <data name="banner-design-india" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner-design-india.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_ThoatGame2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_ThoatGame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hinhthongtin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinhthongtin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_NvsM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_NvsM2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hinhwwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hinhwwin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnOnMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnOnMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,22 +196,25 @@
   <data name="o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\o.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_NvsN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_NvsN2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_ThoatGame2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_ThoatGame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lSi50cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lSi50cl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="frmthatbai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frmthatbai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OffMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OffMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_ThoatGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_ThoatGame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hinhwwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinhwwin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_NvsN2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_NvsN2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buttonok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttonok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="frm_KetThuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frm_KetThuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

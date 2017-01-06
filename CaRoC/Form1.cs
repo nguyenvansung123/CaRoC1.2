@@ -75,8 +75,8 @@ namespace CaRoC
             tmThongTin.Enabled = true; // gọi timertick
             XuLyNhac();// gọi hàm xử lý nhạc
 
-            gifImage = new HinhGif(filePath);
-            gifImage.ReverseAtEnd = false;
+           /* gifImage = new HinhGif(filePath);
+            gifImage.ReverseAtEnd = false;*/
             timerImages.Enabled = true;
 
         }
@@ -196,7 +196,7 @@ namespace CaRoC
 
         private void timerImages_Tick(object sender, EventArgs e)
         {
-            imageGif.Image = gifImage.GetNextFrame();
+          /*  imageGif.Image = gifImage.GetNextFrame();*/
         }
 
         private void prcbCoolDown_Click(object sender, EventArgs e)

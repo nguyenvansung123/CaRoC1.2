@@ -93,6 +93,16 @@ namespace CaRoC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bn2 {
+            get {
+                object obj = ResourceManager.GetObject("bn2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_NvsM {
             get {
                 object obj = ResourceManager.GetObject("btn_NvsM", resourceCulture);
@@ -206,6 +216,26 @@ namespace CaRoC.Properties {
         internal static System.Drawing.Bitmap choigame2 {
             get {
                 object obj = ResourceManager.GetObject("choigame2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f_doc {
+            get {
+                object obj = ResourceManager.GetObject("f_doc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f_ngang {
+            get {
+                object obj = ResourceManager.GetObject("f_ngang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
