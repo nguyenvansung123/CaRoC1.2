@@ -21,7 +21,7 @@ namespace CaRoC
         
         bool Nhacplay = true; //Khởi tạo trạng thái phát nhạc - mặc định phát khi khởi động      
         private HinhGif gifImage = null;
-        private string filePath = @"C:\Users\LUONGYANG\CaRoC1.2\CaRoC\Resources\banana.gif";
+        //private string filePath = @"C:\Users\LUONGYANG\CaRoC1.2\CaRoC\Resources\banana.gif";
 
         public frmCaro()
         {
@@ -261,6 +261,12 @@ namespace CaRoC
         private void imageGif_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Form tbt = new frmThongBao_Vdesign();
+            tbt.Show();         
         }
     }
 }

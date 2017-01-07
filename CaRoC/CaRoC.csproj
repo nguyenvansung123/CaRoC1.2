@@ -227,11 +227,16 @@
     <None Include="Resources\btn_NvsM2.png" />
     <None Include="Resources\btn_ThoatGame2.png" />
     <None Include="Resources\bn2.png" />
+    <None Include="Resources\button_ThoatClose.png" />
     <Content Include="Resources\d.mp3" />
     <None Include="Resources\frmthongbao.png" />
     <None Include="Resources\frm_KetThuc.png" />
     <None Include="Resources\f_doc.png" />
     <None Include="Resources\f_ngang.png" />
+    <None Include="Resources\frmLoadGame.png" />
+    <None Include="Resources\frmLoadGame2.png" />
+    <None Include="Resources\frmLoadGame3.png" />
+    <None Include="Resources\frmLoadGame1.png" />
     <Content Include="Resources\nhac.wav" />
     <Content Include="Resources\nhacnen.WAV" />
   </ItemGroup>

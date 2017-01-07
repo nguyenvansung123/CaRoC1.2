@@ -193,6 +193,16 @@ namespace CaRoC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_ThoatClose {
+            get {
+                object obj = ResourceManager.GetObject("button_ThoatClose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonok {
             get {
                 object obj = ResourceManager.GetObject("buttonok", resourceCulture);
@@ -256,6 +266,56 @@ namespace CaRoC.Properties {
         internal static System.Drawing.Bitmap frmchienthang {
             get {
                 object obj = ResourceManager.GetObject("frmchienthang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frmLoadGame {
+            get {
+                object obj = ResourceManager.GetObject("frmLoadGame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frmLoadGame1 {
+            get {
+                object obj = ResourceManager.GetObject("frmLoadGame1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frmLoadGame11 {
+            get {
+                object obj = ResourceManager.GetObject("frmLoadGame11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frmLoadGame2 {
+            get {
+                object obj = ResourceManager.GetObject("frmLoadGame2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frmLoadGame3 {
+            get {
+                object obj = ResourceManager.GetObject("frmLoadGame3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

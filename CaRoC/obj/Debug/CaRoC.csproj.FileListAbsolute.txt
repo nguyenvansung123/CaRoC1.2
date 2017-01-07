@@ -108,6 +108,7 @@ C:\Users\N.T.D\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThatBai_Vdesign.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.pdb
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmChienThang_Vdesign.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmCaro.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmKetThuc.resources
@@ -122,4 +123,3 @@ C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
-C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache

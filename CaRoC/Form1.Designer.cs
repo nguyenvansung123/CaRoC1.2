@@ -48,7 +48,7 @@
             this.label_HienThiTen = new System.Windows.Forms.Label();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -62,9 +62,10 @@
             this.pcthoat = new System.Windows.Forms.PictureBox();
             this.ptchoigame = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pnThongTin.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -78,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // pnBanCo
@@ -99,9 +101,9 @@
             // 
             this.pnThongTin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnThongTin.Controls.Add(this.lblChuoiChu);
-            this.pnThongTin.Location = new System.Drawing.Point(12, 438);
+            this.pnThongTin.Location = new System.Drawing.Point(20, 438);
             this.pnThongTin.Name = "pnThongTin";
-            this.pnThongTin.Size = new System.Drawing.Size(240, 173);
+            this.pnThongTin.Size = new System.Drawing.Size(230, 173);
             this.pnThongTin.TabIndex = 7;
             // 
             // lblChuoiChu
@@ -125,7 +127,7 @@
             this.HuongdanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(9, 11);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(827, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(776, 34);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +143,7 @@
             this.gAMEToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.gAMEToolStripMenuItem.Name = "gAMEToolStripMenuItem";
             this.gAMEToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.gAMEToolStripMenuItem.Size = new System.Drawing.Size(53, 30);
             this.gAMEToolStripMenuItem.Text = "GAME";
             // 
             // toolStripSeparator1
@@ -179,7 +181,7 @@
             this.ThongtinToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
             this.ThongtinToolStripMenuItem.Name = "ThongtinToolStripMenuItem";
             this.ThongtinToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.ThongtinToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.ThongtinToolStripMenuItem.Size = new System.Drawing.Size(85, 30);
             this.ThongtinToolStripMenuItem.Text = "THÔNG TIN";
             this.ThongtinToolStripMenuItem.Click += new System.EventHandler(this.ThongtinToolStripMenuItem_Click);
             // 
@@ -189,15 +191,15 @@
             this.HuongdanToolStripMenuItem.ForeColor = System.Drawing.Color.Yellow;
             this.HuongdanToolStripMenuItem.Name = "HuongdanToolStripMenuItem";
             this.HuongdanToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.HuongdanToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.HuongdanToolStripMenuItem.Size = new System.Drawing.Size(93, 30);
             this.HuongdanToolStripMenuItem.Text = "HƯỚNG DẪN";
             this.HuongdanToolStripMenuItem.Click += new System.EventHandler(this.HuongdanToolStripMenuItem_Click);
             // 
             // prcbCoolDown
             // 
-            this.prcbCoolDown.Location = new System.Drawing.Point(412, 19);
+            this.prcbCoolDown.Location = new System.Drawing.Point(396, 22);
             this.prcbCoolDown.Name = "prcbCoolDown";
-            this.prcbCoolDown.Size = new System.Drawing.Size(357, 10);
+            this.prcbCoolDown.Size = new System.Drawing.Size(346, 10);
             this.prcbCoolDown.TabIndex = 12;
             this.prcbCoolDown.Click += new System.EventHandler(this.prcbCoolDown_Click);
             // 
@@ -207,7 +209,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(319, 15);
+            this.label1.Location = new System.Drawing.Point(291, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 16);
             this.label1.TabIndex = 13;
@@ -237,31 +239,33 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 30);
             this.toolStripMenuItem1.Text = "\\";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(24, 30);
             this.toolStripMenuItem2.Text = "\\";
             // 
-            // pictureBox9
+            // pictureBox10
             // 
-            this.pictureBox9.Image = global::CaRoC.Properties.Resources.bn2;
-            this.pictureBox9.Location = new System.Drawing.Point(261, 50);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(513, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 18;
-            this.pictureBox9.TabStop = false;
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
+            this.pictureBox10.Image = global::CaRoC.Properties.Resources.button_ThoatClose;
+            this.pictureBox10.Location = new System.Drawing.Point(746, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 19;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::CaRoC.Properties.Resources.f_ngang;
             this.pictureBox8.Location = new System.Drawing.Point(0, 37);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(783, 10);
+            this.pictureBox8.Size = new System.Drawing.Size(786, 11);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
@@ -281,7 +285,7 @@
             this.pictureBox5.Image = global::CaRoC.Properties.Resources.f_ngang;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(845, 10);
+            this.pictureBox5.Size = new System.Drawing.Size(785, 12);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
@@ -291,7 +295,7 @@
             this.pictureBox4.Image = global::CaRoC.Properties.Resources.f_ngang;
             this.pictureBox4.Location = new System.Drawing.Point(0, 614);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(845, 10);
+            this.pictureBox4.Size = new System.Drawing.Size(787, 10);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
@@ -352,7 +356,7 @@
             this.pcNhac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcNhac.Location = new System.Drawing.Point(191, 54);
             this.pcNhac.Name = "pcNhac";
-            this.pcNhac.Size = new System.Drawing.Size(61, 50);
+            this.pcNhac.Size = new System.Drawing.Size(61, 58);
             this.pcNhac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcNhac.TabIndex = 10;
             this.pcNhac.TabStop = false;
@@ -394,6 +398,16 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::CaRoC.Properties.Resources.bn2;
+            this.pictureBox9.Location = new System.Drawing.Point(261, 50);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(513, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 18;
+            this.pictureBox9.TabStop = false;
+            // 
             // frmCaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,6 +415,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(786, 623);
+            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -432,7 +447,7 @@
             this.pnThongTin.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -446,6 +461,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcthoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptchoigame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,6 +501,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }
 

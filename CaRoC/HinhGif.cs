@@ -10,7 +10,7 @@ namespace CaRoC
 {
     class HinhGif
     {
-        /*private Image gifImage;
+        private Image gifImage;
         private FrameDimension dimension;
         private int frameCount;
         private int currentFrame = -1;
@@ -62,6 +62,6 @@ namespace CaRoC
             //find the frame
             return (Image)gifImage.Clone();
             //return a copy of it
-        }*/
+        }
     }
 }
