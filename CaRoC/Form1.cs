@@ -188,10 +188,18 @@ namespace CaRoC
             {
                 prcbCoolDown.Value = 0;
                 tmCoolDown.Stop();
-                MessageBox.Show("Kết thúc game");
-                Form ktgame = new frmKetThuc();
-                ktgame.ShowDialog();
-             }                    
+                //MessageBox.Show("showwdilog");
+                //
+                //
+                if (prcbCoolDown.Value == 0)
+                {
+
+                    frmTimeOut a = new frmTimeOut();
+                    a.ShowDialog();
+                    
+
+                }
+            }                    
         }
 
         private void timerImages_Tick(object sender, EventArgs e)

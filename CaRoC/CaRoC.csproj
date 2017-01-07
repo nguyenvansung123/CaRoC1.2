@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="BanCo.cs" />
     <Compile Include="CaroChess.cs" />
+    <Compile Include="frmTimeOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeOut.Designer.cs">
+      <DependentUpon>frmTimeOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChienThang_Vdesign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     <Compile Include="ThongTin.Designer.cs">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmTimeOut.resx">
+      <DependentUpon>frmTimeOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChienThang_Vdesign.resx">
       <DependentUpon>frmChienThang_Vdesign.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +221,7 @@
     <None Include="Resources\frmchienthang.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\timeout.jpg" />
     <None Include="Resources\OffMusic.png" />
     <None Include="Resources\OnMusic.png" />
     <None Include="Resources\a.PNG" />
