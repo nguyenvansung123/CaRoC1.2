@@ -81,6 +81,42 @@ namespace CaRoC
 
         }
 
+        public bool DanhCo(int MouseX, int MouseY, Graphics g)
+        {
+            if (MouseX % OCo.ChieuRong == 0 || MouseY % OCo.ChieuCao == 0)
+            {
+                return false;
+            }
+            int cot = MouseX / OCo.ChieuRong;
+            int dong = MouseY / OCo.ChieuCao;
+            if (_MangOCo[dong, cot].SoHuu != 0)
+            {
+                return false;
+            }
+            switch (_LuotDi)
+            {
+                case 1:
+                    _MangOCo[dong, cot].SoHuu = 1;
+                    _BanCo.VeQuanCo(g, _MangOCo[dong, cot].ViTri, CoX);
+                    _LuotDi = 2;
+                    break;
+                case 2:
+                    _MangOCo[dong, cot].SoHuu = 2;
+                    _BanCo.VeQuanCo(g, _MangOCo[dong, cot].ViTri, CoO);
+                    _LuotDi = 1;
+                    break;
+                default:
+                    MessageBox.Show("Loi!!!");
+                    break;
+            }
+
+
+
+            DS_CacNuocDaDi.Add(_MangOCo[dong, cot]);
+            return true;
+        }
+
+
         public void XuLyNhac()
         {
             if (Nhacplay == true)
