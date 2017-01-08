@@ -135,6 +135,27 @@ namespace CaRoC
         }
 
 
+        // hàm test thử
+        public void VeLaiQuanCotest(Graphics g)
+        {
+            foreach (OCo oco in DS_CacNuocDaDi)
+            {
+                if (oco.SoHuu == 1)
+                {
+                    _BanCo.VeQuanCo(g, oco.ViTri, CoX);
+                }
+                else
+                {
+                    if (oco.SoHuu == 2)
+                    {
+                        _BanCo.VeQuanCo(g, oco.ViTri, CoO);
+                    }
+                }
+            }
+        }
+
+
+
         public void XuLyNhac()
         {
             if (Nhacplay == true)
