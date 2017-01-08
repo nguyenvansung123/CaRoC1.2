@@ -125,3 +125,7 @@ C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.exe
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.pdb
 C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmKetThuc.resources
 C:\Users\My-PC\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmTimeOut.resources
+C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmTimeOut.resources
+C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmKetThuc.resources
+C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
+C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
