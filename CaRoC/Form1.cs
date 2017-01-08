@@ -116,23 +116,25 @@ namespace CaRoC
             return true;
         }
 
-        public void VeLaiQuanCo(Graphics g)
-        {
-            foreach (OCo oco in DS_CacNuocDaDi)
-            {
-                if (oco.SoHuu == 1)
-                {
-                    _BanCo.VeQuanCo(g, oco.ViTri, CoX);
-                }
-                else
-                {
-                    if (oco.SoHuu == 2)
-                    {
-                        _BanCo.VeQuanCo(g, oco.ViTri, CoO);
-                    }
-                }
-            }
-        }
+        //ham nay carocheck
+
+        //public void VeLaiQuanCo(Graphics g)
+        //{
+        //    foreach (OCo oco in DS_CacNuocDaDi)
+        //    {
+        //        if (oco.SoHuu == 1)
+        //        {
+        //            _BanCo.VeQuanCo(g, oco.ViTri, CoX);
+        //        }
+        //        else
+        //        {
+        //            if (oco.SoHuu == 2)
+        //            {
+        //                _BanCo.VeQuanCo(g, oco.ViTri, CoO);
+        //            }
+        //        }
+        //    }
+        //}
 
 
         // hàm test thử
