@@ -111,3 +111,5 @@ C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmTimeOut.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmKetThuc.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
+C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
