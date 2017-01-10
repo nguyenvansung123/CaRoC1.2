@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Nguyễn Tấn Lộc             1311060777
-Nguyễn Văn Sũng          1311061066
-Lương Quốc Vang          1311061362
-Huỳnh Hữu Tuấn            1311061314
-Trần Thị Hồng Phương  1311061425
-Nguyễn Thành Huy        1311060670
-Nguyễn Thành Đạt         1311061425</value>
-  </data>
 </root>

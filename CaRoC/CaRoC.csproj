@@ -73,7 +73,9 @@
     <Compile Include="frmKetThuc.Designer.cs">
       <DependentUpon>frmKetThuc.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongBao_Vdesign.cs" />
+    <Compile Include="frmThongBao_Vdesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmThongBao_Vdesign.Designer.cs">
       <DependentUpon>frmThongBao_Vdesign.cs</DependentUpon>
     </Compile>
@@ -90,11 +92,15 @@
     <Compile Include="frmLoadGame.Designer.cs">
       <DependentUpon>frmLoadGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="NguoiChoiChienThang1.cs" />
+    <Compile Include="NguoiChoiChienThang1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NguoiChoiChienThang1.Designer.cs">
       <DependentUpon>NguoiChoiChienThang1.cs</DependentUpon>
     </Compile>
-    <Compile Include="NguoiChoiChienThang2.cs" />
+    <Compile Include="NguoiChoiChienThang2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NguoiChoiChienThang2.Designer.cs">
       <DependentUpon>NguoiChoiChienThang2.cs</DependentUpon>
     </Compile>
@@ -136,6 +142,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiChoiChienThang1.resx">
       <DependentUpon>NguoiChoiChienThang1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiChoiChienThang2.resx">
       <DependentUpon>NguoiChoiChienThang2.cs</DependentUpon>
