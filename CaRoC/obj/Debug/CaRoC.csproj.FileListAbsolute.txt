@@ -112,6 +112,7 @@ C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmKetThuc.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang1.resources
 C:\Users\nguyenvansung\CaRoC1.2\CaRoC\obj\Debug\CaRoC.NguoiChoiChienThang2.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\bin\Debug\CaRoC.exe.config
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csprojResolveAssemblyReference.cache
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmTimeOut.resources
@@ -125,5 +126,7 @@ C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.frmThatBai_Vdesign.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.ThongTin.resources
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.csproj.GenerateResource.Cache
 C:\Users\LUONG YANG\CaRoC1.2\CaRoC\obj\Debug\CaRoC.Properties.Resources.resources
+=======
+>>>>>>> XuLyGiaodien
 =======
 >>>>>>> XuLyGiaodien
