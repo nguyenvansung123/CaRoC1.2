@@ -373,6 +373,16 @@ namespace CaRoC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap huongdan_design {
+            get {
+                object obj = ResourceManager.GetObject("huongdan_design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lSi50cl {
             get {
                 object obj = ResourceManager.GetObject("lSi50cl", resourceCulture);

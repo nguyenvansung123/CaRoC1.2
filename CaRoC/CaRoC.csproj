@@ -49,9 +49,7 @@
   <ItemGroup>
     <Compile Include="BanCo.cs" />
     <Compile Include="CaroChess.cs" />
-    <Compile Include="frmTimeOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmTimeOut.cs" />
     <Compile Include="frmTimeOut.Designer.cs">
       <DependentUpon>frmTimeOut.cs</DependentUpon>
     </Compile>
@@ -73,9 +71,7 @@
     <Compile Include="frmKetThuc.Designer.cs">
       <DependentUpon>frmKetThuc.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongBao_Vdesign.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmThongBao_Vdesign.cs" />
     <Compile Include="frmThongBao_Vdesign.Designer.cs">
       <DependentUpon>frmThongBao_Vdesign.cs</DependentUpon>
     </Compile>
@@ -86,30 +82,22 @@
     <Compile Include="Huongdan.Designer.cs">
       <DependentUpon>Huongdan.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLoadGame.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmLoadGame.cs" />
     <Compile Include="frmLoadGame.Designer.cs">
       <DependentUpon>frmLoadGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="NguoiChoiChienThang1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="NguoiChoiChienThang1.cs" />
     <Compile Include="NguoiChoiChienThang1.Designer.cs">
       <DependentUpon>NguoiChoiChienThang1.cs</DependentUpon>
     </Compile>
-    <Compile Include="NguoiChoiChienThang2.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="NguoiChoiChienThang2.cs" />
     <Compile Include="NguoiChoiChienThang2.Designer.cs">
       <DependentUpon>NguoiChoiChienThang2.cs</DependentUpon>
     </Compile>
     <Compile Include="OCo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmThatBai_Vdesign.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmThatBai_Vdesign.cs" />
     <Compile Include="frmThatBai_Vdesign.Designer.cs">
       <DependentUpon>frmThatBai_Vdesign.cs</DependentUpon>
     </Compile>
@@ -222,6 +210,7 @@
     <None Include="Resources\frmchienthang.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\huongdan_design.png" />
     <Content Include="Resources\timeout.jpg" />
     <None Include="Resources\OffMusic.png" />
     <None Include="Resources\OnMusic.png" />
